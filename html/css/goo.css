@@ -1,0 +1,276 @@
+* {
+    font-family: Helvetica, Arial, sans-serif;
+    line-height: 1.3em;
+}
+
+body {
+    margin: 0;
+    background-color: #ccc;
+}
+
+p, div, span, li {
+    font-size: 14px;
+}
+
+p {
+    line-height: 1.4em;
+}
+
+h1 {
+    font-size: 19px;
+}
+
+h2 {
+    font-size: 16px;
+}
+
+h3 {
+    font-size: 13px;
+}
+
+h1, h2, h3 {
+    font-family: "Century Gothic", "Helevica Neue", Arial, Helvetica, sans-serif;
+    font-weight: normal;
+}
+
+a {
+    color: #667200;
+}
+
+a:visited {
+    color: #3C4200;
+}
+
+#main, #footer {
+    margin: 0 auto;
+    width: 840px;
+    padding: 20px 0;
+}
+
+#main {
+    background-image: url('../images/bg-body.png');
+    background-repeat: repeat-y;
+    position: relative;
+}
+
+/* Header
+----------------------------------------*/
+
+#header {
+    position: relative;
+    height: 150px;
+}
+
+#logo {
+    position: absolute;
+    left: 40px;
+    top: 10px;
+}
+
+#slogan {
+    position: absolute;
+    font-size: 17px;
+    left: 130px;
+    top: 110px;
+    font-family: "Century Gothic", "Helevica Neue", Arial, Helvetica, sans-serif;
+    color: #09f;
+}
+
+/* Tabs
+----------------------------------------*/
+
+ul.tabs li {
+    list-style-type: none;
+}
+
+/* navigation tabs */
+
+#nav .tabs {
+    margin: 0 30px;
+    text-align: right;
+    position: absolute;
+    right: 0px;
+    top: 30px;
+}
+
+#nav .tabs li {
+    margin-bottom: 12px;
+}
+
+#nav .tabs li a {
+    text-decoration: none;
+    background-color: #A0B400;
+    color: white;
+    padding: 5px 10px;
+}
+
+#nav .tabs li a:hover {
+    text-decoration: none;
+    background-color: #3C4200;
+    color: white;
+    padding: 5px 10px;
+}
+
+#nav .tabs li a.selected {
+    background-color: #08d;
+}
+
+/* Content
+----------------------------------------*/
+
+#content {
+    color: #333;
+    padding: 0 60px;
+}
+
+
+/* App showcase
+----------------------------------------*/
+
+#showcase {
+    margin: 36px -30px -30px -30px;
+    background-image: url(../images/showcase-bg.png);
+    background-repeat: no-repeat;
+    background-position: right top;
+    background-color: black;
+    min-height: 420px;
+    position: relative;
+}
+
+#showcase .detail {
+    color: #aaa;
+}
+
+#showcase a {
+    color: #09f;
+}
+
+#showcase .app {
+    color: white;
+}
+
+#showcase .app h2 {
+    display: none;
+}
+
+#showcase .app h3 {
+    font-size: 18px;
+    color: #A0B400;
+}
+
+#showcase .app + .app {
+    display: none;
+}
+
+#showcase .app .screenshot {
+    position: absolute;
+    top: 73px;
+    right: 30px;
+}
+
+#showcase .app .description {
+    margin-right: 240px;
+    padding: 40px;
+}
+
+#showcase .app .appstore-badge {
+    padding-top: 40px;
+}
+
+#showcase ul.thumbs {
+    padding: 0;
+}
+
+#showcase ul.thumbs li {
+    display: inline;
+    list-style-type: none;
+}
+
+/* showcase tabs */
+
+#showcase ul.tabs {
+    position: relative;
+    top: 22px;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+#showcase li {
+    margin: 0;
+}
+
+#showcase .tab {
+    display: inline;
+}
+
+#showcase .tab a {
+    background-image: url(../images/showcase-tab-bg.png);
+    background-position: bottom;
+    background-repeat: repeat-x;
+    padding: 5px 12px;
+    margin: 0;
+    background-color: #555;
+    text-decoration: none;
+    color: white;
+    font-weight: normal;
+    font-family: "Lucida Sans", Helvetica, Arial, sans-serif;
+}
+
+#showcase .tab a:hover {
+    background-color: #A0B400;
+}
+
+#showcase .tab a.selected {
+    background-color: #09f;
+    color: #fff;
+}
+
+#showcase .tab+.tab a {
+    margin-left: 1px;
+}
+
+#showcase .tab a.first {
+    -webkit-border-top-left-radius: 12px;
+    -webkit-border-bottom-left-radius: 12px;
+    -moz-border-radius-topleft: 12px;
+    -moz-border-radius-bottomleft: 12px;
+    border-top-left-radius: 12px;
+    border-bottom-left-radius: 12px;
+    padding-left: 16px;
+}
+
+#showcase .tab a.last {
+    -webkit-border-top-right-radius: 12px;
+    -webkit-border-bottom-right-radius: 12px;
+    -moz-border-radius-topright: 12px;
+    -moz-border-radius-bottomright: 12px;
+    border-top-right-radius: 12px;
+    border-bottom-right-radius: 12px;
+    padding-right: 16px;
+}
+
+
+/* Footer
+----------------------------------------*/
+
+#footer {
+    clear: left;
+    background-image: url('../images/bg-footer.png');
+    background-repeat: no-repeat;
+    padding-top: 40px;
+    text-align: center;
+    color: #555;
+    font-size: 11px;
+}
+
+/* About page
+----------------------------------------*/
+
+.portrait {
+    float: left;
+}
+
+.biog {
+    margin-left: 190px;
+}
