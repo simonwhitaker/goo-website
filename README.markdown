@@ -1,0 +1,1 @@
+This is the code base for the Goo Software Ltd website ([www.goosoftware.co.uk](http://www.goosoftware.co.uk))
