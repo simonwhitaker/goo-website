@@ -53,6 +53,14 @@ a:visited {
     position: relative;
 }
 
+/* Common bits and bobs
+----------------------------------------*/
+
+p img.icon[height="16"] {
+    vertical-align: -2px;
+    margin-right: 3px;
+}
+
 /* Header
 ----------------------------------------*/
 
