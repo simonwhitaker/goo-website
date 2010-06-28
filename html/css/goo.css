@@ -272,6 +272,15 @@ ul.tabs li {
     font-size: 11px;
 }
 
+/* Contact page
+----------------------------------------*/
+
+#contact-details td {
+    min-width: 30px;
+    padding: 0 0 10px 0;
+}
+
+
 /* About page
 ----------------------------------------*/
 
