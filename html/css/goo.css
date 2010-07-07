@@ -275,11 +275,24 @@ ul.tabs li {
 /* Contact page
 ----------------------------------------*/
 
+#contact-details {
+    margin: 24px 0 12px 40px;
+}
+
 #contact-details td {
     min-width: 30px;
     padding: 0 0 10px 0;
 }
 
+#map {
+    border: 1px solid #ccc;
+    padding: 4px;
+    float: right;
+}
+
+#end-map {
+    clear: right;
+}
 
 /* About page
 ----------------------------------------*/
