@@ -282,6 +282,7 @@ ul.tabs li {
 #contact-details td {
     min-width: 30px;
     padding: 0 0 10px 0;
+    vertical-align: top;
 }
 
 #map {
