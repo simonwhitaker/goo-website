@@ -1,4 +1,4 @@
-* {
+p, div, span, td, th, li {
     font-family: Helvetica, Arial, sans-serif;
     line-height: 1.3em;
 }
@@ -17,11 +17,12 @@ p {
 }
 
 h1 {
-    font-size: 19px;
+    font-size: 22px;
+    font-weight: normal;
 }
 
 h2 {
-    font-size: 16px;
+    font-size: 17px;
 }
 
 h3 {
@@ -30,10 +31,12 @@ h3 {
 
 h1, h2, h3 {
     font-family: "Century Gothic", "Helevica Neue", Arial, Helvetica, sans-serif;
-    font-weight: normal;
 }
 
-a {
+h1 {
+}
+
+a[href] {
     color: #667200;
 }
 
@@ -293,6 +296,25 @@ ul.tabs li {
 
 #end-map {
     clear: right;
+}
+
+/* Support page
+----------------------------------------*/
+
+.support-steps img {
+    margin: 10px 0 30px 10px;
+    border: 1px solid #ccc;
+    padding: 3px;
+}
+
+.support-steps li+li {
+    margin-top: 6px;
+}
+
+div.support-item {
+    border-top: 1px solid #A0B400;
+    padding-top: 10px;
+    margin-top: 40px;
 }
 
 /* About page
