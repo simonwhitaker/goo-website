@@ -9,7 +9,7 @@ body {
 }
 
 p, div, span, li {
-    font-size: 14px;
+    font-size: 15px;
 }
 
 p {
@@ -69,7 +69,7 @@ p img.icon[height="16"] {
 
 #header {
     position: relative;
-    height: 150px;
+    height: 190px;
 }
 
 #logo {
@@ -139,6 +139,7 @@ ul.tabs li {
 ----------------------------------------*/
 
 #showcase {
+    margin-top: 50px;
 }
 
 #showcase .detail {
@@ -154,10 +155,14 @@ ul.tabs li {
 }
 
 #showcase .app {
-    padding-top: 20px;
+    margin: 0 -30px;
+    padding: 50px 30px;
+    background-repeat: repeat-x;
+    background-image: url('../images/separator.png');
 }
 
 #showcase .app h2 {
+    margin-top: 0;
     font-size: 24px;
     font-weight: bold;
 }
@@ -167,7 +172,9 @@ ul.tabs li {
 }
 
 #showcase .app h2 a:hover {
-    text-decoration: underline;
+    background-color: #09f;
+    color: white;
+/*    text-decoration: underline;*/
 }
 
 #showcase .app h3 {
@@ -176,8 +183,6 @@ ul.tabs li {
 }
 
 #showcase .app + .app {
-    border-top: 1px solid #ccc;
-    margin-top: 40px;
 }
 
 #showcase .app .screenshot {
@@ -190,7 +195,7 @@ ul.tabs li {
 }
 
 #showcase .app .appstore-badge {
-    padding-top: 10px;
+    padding-top: 15px;
 }
 
 /* Footer
