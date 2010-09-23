@@ -139,128 +139,59 @@ ul.tabs li {
 ----------------------------------------*/
 
 #showcase {
-    margin: 36px -30px -30px -30px;
-    background-image: url(../images/showcase-bg.png);
-    background-repeat: no-repeat;
-    background-position: right top;
-    background-color: black;
-    min-height: 420px;
-    position: relative;
 }
 
 #showcase .detail {
-    color: #aaa;
+    color: #555;
 }
 
 #showcase a {
     color: #09f;
 }
 
+.app-end {
+    clear: left;
+}
+
 #showcase .app {
-    color: white;
+    padding-top: 20px;
 }
 
 #showcase .app h2 {
-    display: none;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+#showcase .app h2 a {
+    text-decoration: none;
+}
+
+#showcase .app h2 a:hover {
+    text-decoration: underline;
 }
 
 #showcase .app h3 {
     font-size: 18px;
-    color: #A0B400;
+    color: #555;
 }
 
 #showcase .app + .app {
-    display: none;
+    border-top: 1px solid #ccc;
+    margin-top: 40px;
 }
 
 #showcase .app .screenshot {
-    position: absolute;
-    top: 73px;
-    right: 30px;
+    float: left;
 }
 
 #showcase .app .description {
-    margin-right: 240px;
-    padding: 40px;
+    margin-left: 230px;
+    padding: 0px;
 }
 
 #showcase .app .appstore-badge {
-    padding-top: 40px;
+    padding-top: 10px;
 }
-
-#showcase ul.thumbs {
-    padding: 0;
-}
-
-#showcase ul.thumbs li {
-    display: inline;
-    list-style-type: none;
-}
-
-/* showcase tabs */
-
-#showcase ul.tabs {
-    position: relative;
-    top: 22px;
-    margin: 0;
-    padding: 0;
-    text-align: center;
-}
-
-#showcase li {
-    margin: 0;
-}
-
-#showcase .tab {
-    display: inline;
-}
-
-#showcase .tab a {
-    background-image: url(../images/showcase-tab-bg.png);
-    background-position: bottom;
-    background-repeat: repeat-x;
-    padding: 5px 12px;
-    margin: 0;
-    background-color: #555;
-    text-decoration: none;
-    color: white;
-    font-weight: normal;
-    font-family: "Lucida Sans", Helvetica, Arial, sans-serif;
-}
-
-#showcase .tab a:hover {
-    background-color: #A0B400;
-}
-
-#showcase .tab a.selected {
-    background-color: #09f;
-    color: #fff;
-}
-
-#showcase .tab+.tab a {
-    margin-left: 1px;
-}
-
-#showcase .tab a.first {
-    -webkit-border-top-left-radius: 12px;
-    -webkit-border-bottom-left-radius: 12px;
-    -moz-border-radius-topleft: 12px;
-    -moz-border-radius-bottomleft: 12px;
-    border-top-left-radius: 12px;
-    border-bottom-left-radius: 12px;
-    padding-left: 16px;
-}
-
-#showcase .tab a.last {
-    -webkit-border-top-right-radius: 12px;
-    -webkit-border-bottom-right-radius: 12px;
-    -moz-border-radius-topright: 12px;
-    -moz-border-radius-bottomright: 12px;
-    border-top-right-radius: 12px;
-    border-bottom-right-radius: 12px;
-    padding-right: 16px;
-}
-
 
 /* Footer
 ----------------------------------------*/
