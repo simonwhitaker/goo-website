@@ -96,12 +96,15 @@ ul.tabs li {
 
 /* navigation tabs */
 
-#nav .tabs {
-    margin: 0 30px;
-    text-align: right;
+#nav {
     position: absolute;
     right: 0px;
     top: 30px;
+}
+
+#nav .tabs {
+    margin: 0 30px;
+    text-align: right;
 }
 
 #nav .tabs li {
@@ -262,4 +265,109 @@ div.support-item {
 
 .biog {
     margin-left: 190px;
+}
+
+@media screen and (max-device-width: 480px) {
+    body {
+        margin: 0;
+        padding: 0;
+        background-color: #fff;
+        background-image: none;
+    }
+    
+    p, div, span, li {
+        font-size: 20px;
+    }
+    
+    h1 {
+        font-size: 28px;
+        font-weight: normal;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+
+    h3 {
+        font-size: 20px;
+    }
+    
+    #header {
+        height: 160px;
+    }
+
+    #main {
+        width: 480px;
+        margin: 0;
+        padding: 0;
+        background-image: none;
+    }
+
+    #logo {
+        left: 10px;
+    }
+
+    #slogan {
+        left: 120px;
+        width: 300px;
+    }
+    #nav {
+        position: relative;
+        top: 0;
+        left: 0;
+        padding: 0;
+        margin: 10px 0;
+    }
+    
+    #nav .tabs {
+        text-align: left;
+        padding: 0;
+        margin: 0 20px;
+    }
+    
+    #nav .tabs li {
+        float: left;
+        font-size: 20px;
+    }
+
+    #nav .tabs li+li {
+        margin-left: 15px;
+    }
+
+    #content {
+        clear: both;
+        padding: 0 20px;
+        margin: 60px 0 0 0;
+        width: 440px;
+    }
+    
+    #showcase .app {
+        background: none;
+        margin: 0 -20px;
+        padding: 30px 20px;
+        border-top: 1px solid #666;
+    }
+
+    #showcase .app .screenshot img {
+        width: 120px;
+    }
+
+    #showcase .app .description {
+        margin-left: 140px;
+        padding: 0px;
+    }
+    #footer {
+        width: 460px;
+        margin: 0;
+        background-image: none;
+        background-color: #888;
+        padding: 20px 10px;
+        text-align: center;
+        color: #fff;
+        font-size: 10px;
+    }
+
+    #footer a {
+        color: white;
+    }   
 }
