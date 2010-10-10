@@ -20,6 +20,82 @@ var _gaq = _gaq || [];
         var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
         })();
         </script>
+        <script type="text/javascript" charset="utf-8" src="js/jquery-1.4.2.min.js"></script>
+        <script type="text/javascript" charset="utf-8">
+            // init function
+            $(function () {
+                var PADDING = 64;
+                var w = $('#apps').width();
+                
+                if (w <= 480) {
+                    // bomb out if we're on iPhone
+                    return
+                }
+
+                $('.app').each(function(index) {
+                    $(this).css('position','absolute');
+                    $(this).css('top', 0);
+                    $(this).css('left',( w * index)  + 'px');
+                    $(this).css('width',( w - PADDING * 2)  + 'px');
+                    $(this).css('padding-left', PADDING + 'px');
+                    $(this).css('padding-right', PADDING + 'px');
+                });
+                $('#apps').css('overflow','hidden');
+                $('#apps').css('height', '480px');
+                
+                var t_anim = 300;
+                
+                var pageleft = $('<a></a>').attr('href','#').click(function(){
+                    scroll_to_page(get_current_page() - 1);
+                    return false;
+                });
+                pageleft.attr('id', 'paging-arrow-left');
+                pageleft.css('position', 'absolute');
+                pageleft.css('display', 'none');
+                pageleft.css('top', '208px');
+                pageleft.css('left', '-32px');
+                pageleft.append($('<img>').attr('src', '/images/paging-arrow-left.png').attr('border', 0));
+
+                var pageright = $('<a></a>').attr('href','#').click(function(){
+                    scroll_to_page(get_current_page() + 1);
+                    return false;
+                });
+                pageright.attr('id', 'paging-arrow-right');
+                pageright.css('position', 'absolute');
+                pageright.css('top', '208px');
+                pageright.css('right', '-32px');
+                pageright.append($('<img>').attr('src', '/images/paging-arrow-right.png').attr('border', 0));
+
+                $('#showcase').append(pageleft).append(pageright);
+            });
+            
+            function get_current_page() {
+                return Math.round($('#apps').scrollLeft() / $('#apps').width());
+            }
+
+            function scroll_to_page(page) {
+                var page_width =  $('#apps').width();
+                var prev_page = get_current_page()
+
+                // Do the scrolling
+                $('#apps').animate({'scrollLeft': page_width * page}, 300);
+                
+                // Show/hide paging buttons
+                var num_pages = $('.app').length;
+                var t_fade = 150;
+                if (page == 0)
+                    $('#paging-arrow-left').fadeOut(t_fade);
+                else if (page == num_pages - 1)
+                    $('#paging-arrow-right').fadeOut(t_fade);
+                
+                if (prev_page == 0)
+                    $('#paging-arrow-left').fadeIn(t_fade);
+                else if (prev_page == num_pages - 1)
+                    $('#paging-arrow-right').fadeIn(t_fade);
+                    
+                    
+            }
+        </script>
     </head>
     <body>
         <div id="main">
@@ -53,23 +129,21 @@ var _gaq = _gaq || [];
                     Welcome to Goo!
                 </h1>
                 <p>
-                    We're a UK software house specialising in apps for iPhone, iPad and iPod Touch. Look what we've done:
+                    We're a UK software house specialising in apps for iPhone, iPad and iPod Touch. Here's some of the stuff we've done.
                 </p>
                 <div id="showcase">
                     <div id="apps">
                         <!-- XX app -->
                         <!--
                         <div class="app" id="app-xx">
-                            <div class="screenshot">
-                                <a href="http://itunes.apple.com/gb/app/the-xx/id394653020?mt=8"><img src="images/apps/xx-screenshot-200x300.png" width="200" alt="Exam Countdown Screenshot 200x300" border="0"></a>
-                            </div>
+                            <h2>
+                                <a href="http://itunes.apple.com/gb/app/the-xx/id394653020?mt=8">The xx</a>
+                                <span class="appslogan">Innovative multi-device video experience</span>
+                            </h2>
+                            <a href="http://itunes.apple.com/gb/app/the-xx/id394653020?mt=8">
+                                <img src="images/apps/xx-screenshot-200x300.png" class="screenshot" alt="Exam Countdown Screenshot 200x300" border="0">
+                            </a>
                             <div class="description">
-                                <h2>
-                                    <a href="http://itunes.apple.com/gb/app/the-xx/id394653020?mt=8">The xx</a>
-                                </h2>
-                                <h3>
-                                    Innovative multi-device video experience
-                                </h3>
                                 <p>
                                     Using this innovative app, you and up to two friends can play tracks from the 
                                     xx's award-winning debut album <em>XX</em> across multiple iPhones or iPod Touches.
@@ -90,21 +164,23 @@ var _gaq = _gaq || [];
                         <!-- .app -->
                         <!-- iBreastCheck app -->
                         <div class="app" id="app-ibreastcheck">
-                            <div class="screenshot">
-                                <a href="http://itunes.apple.com/gb/app/ibreastcheck/id391746205?mt=8"><img src="images/apps/ibreastcheck-screenshot-200x300.png" width="200" alt="Exam Countdown Screenshot 200x300" border="0"></a>
-                            </div>
+                            <h2>
+                                <a href="http://itunes.apple.com/gb/app/ibreastcheck/id391746205?mt=8">iBreastCheck</a>
+                                <span class="appslogan">Helping you to be breast aware</span>
+                            </h2>
+                                
+                            <a href="http://itunes.apple.com/gb/app/ibreastcheck/id391746205?mt=8">
+                                <img src="images/apps/ibreastcheck-screenshot-200x300.png" class="screenshot" alt="Exam Countdown Screenshot 200x300" border="0">
+                            </a>
                             <div class="description">
-                                <h2>
-                                    <a href="http://itunes.apple.com/gb/app/ibreastcheck/id391746205?mt=8">iBreastCheck</a>
-                                </h2>
-                                <h3>
-                                    Helping you to be breast aware
-                                </h3>
                                 <p>
-                                    iBreastCheck from breast cancer charity Breakthrough helps you to be breast aware with a little TLC: Touch, Look, Check.
+                                    iBreastCheck from breast cancer charity Breakthrough helps you 
+                                    to be breast aware with a little TLC: Touch, Look, Check.
                                 </p>
                                 <p>
-                                    The app has video and slideshow content explaining how to check your breasts, a reminder service to help you to remember to check regularly, and more.
+                                    The app has video and slideshow content explaining how to check 
+                                    your breasts, a reminder service to help you to remember to check 
+                                    regularly, and more.
                                 </p>
                                 <div class="detail">
                                     Client: <a href="http://www.torchbox.com/">Torchbox Ltd</a>
@@ -113,25 +189,26 @@ var _gaq = _gaq || [];
                                     Platform: iPhone and iPod Touch
                                 </div>
                                 <div class="appstore-badge">
-                                    <a href="http://itunes.apple.com/gb/app/ibreastcheck/id391746205?mt=8"><img src="images/app-store-badge-clipped.png" alt="App Store Badge Clipped" border="0"></a>
+                                    <a href="http://itunes.apple.com/gb/app/ibreastcheck/id391746205?mt=8">
+                                        <img src="images/app-store-badge-clipped.png" alt="App Store Badge Clipped" border="0">
+                                    </a>
                                 </div>
                             </div>
                             <div class="app-end"></div>
                         </div><!-- .app -->
                         <!-- Exam Countdown app -->
                         <div class="app" id="app-exam-countdown">
-                            <div class="screenshot">
-                                <a href="http://itunes.apple.com/gb/app/exam-countdown/id372962356?mt=8"><img src="images/apps/exam-countdown-screenshot-200x300.png" width="200" alt="Exam Countdown Screenshot 200x300" border="0"></a>
-                            </div>
+                            <h2>
+                                <a href="http://itunes.apple.com/gb/app/exam-countdown/id372962356?mt=8">Exam Countdown</a>
+                                <span class="appslogan">Track your exams the fun way</span>
+                            </h2>
+                            <a href="http://itunes.apple.com/gb/app/exam-countdown/id372962356?mt=8">
+                                <img src="images/apps/exam-countdown-screenshot-200x300.png" class="screenshot" alt="Exam Countdown Screenshot 200x300" border="0">
+                            </a>
                             <div class="description">
-                                <h2>
-                                    <a href="http://itunes.apple.com/gb/app/exam-countdown/id372962356?mt=8">Exam Countdown</a>
-                                </h2>
-                                <h3>
-                                    Keeping track of your exams, the fun way
-                                </h3>
                                 <p>
-                                    The Exam Countdown app allows students to keep track of forthcoming exams and share their thoughts via Facebook.
+                                    The Exam Countdown app allows students to keep track of forthcoming exams 
+                                    and share their thoughts via Facebook.
                                 </p>
                                 <div class="detail">
                                     Client: Pearson Education Ltd
@@ -140,23 +217,23 @@ var _gaq = _gaq || [];
                                     Platform: iPhone and iPod Touch
                                 </div>
                                 <div class="appstore-badge">
-                                    <a href="http://itunes.apple.com/gb/app/exam-countdown/id372962356?mt=8"><img src="images/app-store-badge-clipped.png" alt="App Store Badge Clipped" border="0"></a>
+                                    <a href="http://itunes.apple.com/gb/app/exam-countdown/id372962356?mt=8">
+                                        <img src="images/app-store-badge-clipped.png" alt="App Store Badge Clipped" border="0">
+                                    </a>
                                 </div>
                             </div>
                             <div class="app-end"></div>
                         </div><!-- .app -->
                         <!-- Sports Massager app -->
                         <div class="app" id="app-sports-massager">
-                            <div class="screenshot">
-                                <a href="http://itunes.apple.com/gb/app/sports-massager/id352993865?mt=8"><img src="images/apps/sports-massager-screenshot-200x300.png" width="200" alt="Sports Massager Screenshot 200x300" border="0"></a>
-                            </div>
+                            <h2>
+                                <a href="http://itunes.apple.com/gb/app/sports-massager/id352993865?mt=8">Sports Massager</a>
+                                <span class="appslogan">Let your phone take the strain</span>
+                            </h2>
+                            <a href="http://itunes.apple.com/gb/app/sports-massager/id352993865?mt=8">
+                                <img src="images/apps/sports-massager-screenshot-200x300.png" class="screenshot" alt="Sports Massager Screenshot 200x300" border="0">
+                            </a>
                             <div class="description">
-                                <h2>
-                                    <a href="http://itunes.apple.com/gb/app/sports-massager/id352993865?mt=8">Sports Massager</a>
-                                </h2>
-                                <h3>
-                                    Let your phone take the strain
-                                </h3>
                                 <p>
                                     Aching after a great workout? Let Dan The Man take the strain! Just hit the button then enjoy a relaxing massage from Dan The Man in this fun app - Goo's first foray onto the App Store.
                                 </p>
@@ -171,16 +248,14 @@ var _gaq = _gaq || [];
                         </div><!-- .app -->
                         <!-- Habilis -->
                         <div class="app" id="app-habilis">
-                            <div class="screenshot">
-                                <a href="http://www.gethabilis.com/"><img src="images/apps/habilis-logo-200x300.png" width="200" alt="Habilis Logo 200x300" border="0"></a>
-                            </div>
+                            <h2>
+                                <a href="http://www.gethabilis.com/">Habilis</a>
+                                <span class="appslogan">The email-to-Dropbox gateway</span>
+                            </h2>
+                            <a href="http://www.gethabilis.com/">
+                                <img src="images/apps/habilis-logo-white-200x300.png" class="screenshot" alt="Habilis Logo 200x300" border="0">
+                            </a>
                             <div class="description">
-                                <h2>
-                                    <a href="http://www.gethabilis.com/">Habilis</a>
-                                </h2>
-                                <h3>
-                                    The email-to-Dropbox gateway
-                                </h3>
                                 <p>
                                     Here at Goo Towers we really love iPads and we really love <a href="http://www.dropbox.com/">Dropbox.com</a>, so it niggled us that we couldn't create content on our iPads and upload it straight to Dropbox. We don't like being niggled, so we went ahead and invented Habilis, the email-to-Dropbox gateway.
                                 </p>
@@ -195,7 +270,8 @@ var _gaq = _gaq || [];
             </div><!-- #content -->
         </div><!-- #main -->
         <div id="footer">
-            Goo Software Ltd, registered in England and Wales with company number 7242280. Registered address: 88 Lucerne Avenue, Bicester OX26 3EL, UK
+            Goo Software Ltd, registered in England and Wales with company number 7242280.
+            <br>Registered address: 88 Lucerne Avenue, Bicester OX26 3EL, UK
         </div>
     </body>
 </html>

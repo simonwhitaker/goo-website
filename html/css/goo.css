@@ -4,11 +4,12 @@ p, div, span, td, th, li {
 }
 
 body {
-    margin: 0;
+    width: 840px;
+    margin: 0 auto;
     background-color: #ccc;
 }
 
-p, div, span, li {
+p, div, li {
     font-size: 15px;
 }
 
@@ -44,16 +45,14 @@ a:visited {
     color: #3C4200;
 }
 
-#main, #footer {
-    margin: 0 auto;
-    width: 840px;
+#main {
     padding: 20px 0;
+    background-color: white;
+    position: relative;
 }
 
-#main {
-    background-image: url('../images/bg-body.png');
-    background-repeat: repeat-y;
-    position: relative;
+#footer {
+    padding: 20px;
 }
 
 /* Common bits and bobs
@@ -103,7 +102,7 @@ ul.tabs li {
 }
 
 #nav .tabs {
-    margin: 0 30px;
+    margin: 0;
     text-align: right;
 }
 
@@ -134,7 +133,7 @@ ul.tabs li {
 
 #content {
     color: #333;
-    padding: 0 60px;
+    padding: 0 30px;
 }
 
 
@@ -142,11 +141,22 @@ ul.tabs li {
 ----------------------------------------*/
 
 #showcase {
-    margin-top: 50px;
+    margin: 30px;
+    background-color: black;
+    background-image: url('../images/app-bg.png');
+    background-repeat: no-repeat;
+    color: #ddd;
+    position: relative;
+    border-radius: 20px;
+    -moz-border-radius: 20px;
+}
+
+#apps {
+    position: relative;
 }
 
 #showcase .detail {
-    color: #555;
+    color: #aaa;
 }
 
 #showcase a {
@@ -158,38 +168,34 @@ ul.tabs li {
 }
 
 #showcase .app {
-    margin: 0 -30px;
-    padding: 50px 30px;
-    background-repeat: repeat-x;
-    background-image: url('../images/separator.png');
+    padding: 40px 100px;
 }
 
 #showcase .app h2 {
     margin-top: 0;
-    font-size: 24px;
+    font-size: 22px;
     font-weight: bold;
 }
 
 #showcase .app h2 a {
     text-decoration: none;
+    color: #eee;
 }
 
 #showcase .app h2 a:hover {
     background-color: #09f;
     color: white;
-/*    text-decoration: underline;*/
 }
 
-#showcase .app h3 {
-    font-size: 18px;
-    color: #555;
-}
-
-#showcase .app + .app {
+#showcase .app h2 .appslogan {
+    color: #09f;
+    font-weight: normal;
+    margin-left: 6px;
 }
 
 #showcase .app .screenshot {
     float: left;
+    width: 200px;
 }
 
 #showcase .app .description {
@@ -206,12 +212,10 @@ ul.tabs li {
 
 #footer {
     clear: left;
-    background-image: url('../images/bg-footer.png');
-    background-repeat: no-repeat;
-    padding-top: 40px;
     text-align: center;
-    color: #555;
-    font-size: 11px;
+    color: #eee;
+    background-color: #555;
+    font-size: 12px;
 }
 
 /* Contact page
@@ -261,14 +265,16 @@ div.support-item {
 
 .portrait {
     float: left;
+    width: 162px;
 }
 
 .biog {
-    margin-left: 190px;
+    margin-left: 180px;
 }
 
 @media screen and (max-device-width: 480px) {
     body {
+        width: 480px;
         margin: 0;
         padding: 0;
         background-color: #fff;
@@ -297,7 +303,6 @@ div.support-item {
     }
 
     #main {
-        width: 480px;
         margin: 0;
         padding: 0;
         background-image: none;
@@ -341,14 +346,23 @@ div.support-item {
         width: 440px;
     }
     
+    #showcase {
+        border-radius: 0;
+        -moz-border-radius: 0;
+        padding: 0 20px;
+        margin: 20px -20px 0px -20px;
+    }
+    
+    #showcase .app h2 a {
+    }
+
     #showcase .app {
-        background: none;
-        margin: 0 -20px;
-        padding: 30px 20px;
+        margin: 0;
+        padding: 30px 0px;
         border-top: 1px solid #666;
     }
 
-    #showcase .app .screenshot img {
+    #showcase .app img.screenshot {
         width: 120px;
     }
 
@@ -356,11 +370,9 @@ div.support-item {
         margin-left: 140px;
         padding: 0px;
     }
+    
     #footer {
-        width: 460px;
         margin: 0;
-        background-image: none;
-        background-color: #888;
         padding: 20px 10px;
         text-align: center;
         color: #fff;
@@ -370,4 +382,14 @@ div.support-item {
     #footer a {
         color: white;
     }   
+    
+    .portrait {
+        float: left;
+        width: 60px;
+    }
+
+    .biog {
+        margin-left: 80px;
+    }
+    
 }
