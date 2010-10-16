@@ -1,1 +1,5 @@
 require 'nanoc3/tasks'
+
+task :default do |t|
+    sh "nanoc compile"
+end
