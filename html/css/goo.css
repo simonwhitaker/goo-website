@@ -1,16 +1,16 @@
 p, div, span, td, th, li {
-    font-family: Helvetica, Arial, sans-serif;
     line-height: 1.3em;
 }
 
 body {
+    font-family: Helvetica, Arial, sans-serif;
     width: 840px;
     margin: 0 auto;
     background-color: #ccc;
 }
 
 p, div, li {
-    font-size: 15px;
+/*    font-size: 15px;*/
 }
 
 p {
@@ -168,7 +168,7 @@ ul.tabs li {
 }
 
 #showcase .app {
-    padding: 40px 100px;
+    padding: 30px 100px;
 }
 
 #showcase .app h2 {
@@ -195,12 +195,23 @@ ul.tabs li {
 
 #showcase .app .screenshot {
     float: left;
-    width: 200px;
+    max-width: 240px;
 }
 
 #showcase .app .description {
-    margin-left: 230px;
+    margin-left: 265px;
     padding: 0px;
+}
+
+#showcase .app .quotation {
+    font-style: italic;
+}
+
+#showcase .app .quotation .source {
+    font-style: normal;
+    font-weight: normal;
+    color: #666;
+    margin-left: 5px;
 }
 
 #showcase .app .appstore-badge {
