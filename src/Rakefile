@@ -1,5 +1,8 @@
 require 'nanoc3/tasks'
 
-task :default do |t|
+desc "Compiles the static site contents using nanoc"
+task :compile do |t|
     sh "nanoc compile"
 end
+
+task :default => [:compile]
