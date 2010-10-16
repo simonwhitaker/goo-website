@@ -12,16 +12,24 @@
 
 compile '*' do
     if item[:extension] == 'html' then
-        layout 'goo'
         filter :erb
-    elsif item[:extension] == 'markdown' then
         layout 'goo'
+    elsif item[:extension] == 'markdown' then
         filter :kramdown
+        layout 'goo'
     end
 end
 
 route %r{^/(css|js|images)/.*/} do
     item.identifier.chop + '.' + item[:extension]
+end
+
+route '/error/*/' do
+    item.identifier.chop + '.html'
+end
+
+route '/htaccess/' do 
+    '/.htaccess'
 end
 
 route '*' do
