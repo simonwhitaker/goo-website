@@ -10,7 +10,6 @@ body {
 }
 
 p, div, li {
-/*    font-size: 15px;*/
 }
 
 p {
@@ -173,7 +172,7 @@ ul.tabs li {
 }
 
 #showcase .app {
-/*    padding: 30px 100px;*/
+    padding: 30px;
 }
 
 #showcase .app h2 {
@@ -244,12 +243,18 @@ ul.tabs li {
     border-bottom: 1px solid #666;
 }
 
+#showcase #page_control a.selected {
+    background-color: black;
+    color: #09f;
+}
+
 #showcase #page_control a+a {
     border-top-width: 0;
 }
 
 #showcase #page_control a:hover {
     background-color: #09f;
+    color: white;
 }
 
 /* Footer
@@ -392,10 +397,16 @@ div.support-item {
     }
     
     #showcase {
+        width: 100%;
         border-radius: 0;
         -moz-border-radius: 0;
         padding: 0 20px;
         margin: 20px -20px 0px -20px;
+    }
+    
+    #showcase #apps {
+        width: 100%;
+        border-width: 0;
     }
     
     #showcase .app h2 a {
@@ -404,7 +415,6 @@ div.support-item {
     #showcase .app {
         margin: 0;
         padding: 30px 0px;
-        border-top: 1px solid #666;
     }
 
     #showcase .app img.screenshot {
