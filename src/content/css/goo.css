@@ -161,6 +161,7 @@ ul.tabs li {
 
 #showcase .detail {
     color: #aaa;
+    font-size: 13px;
 }
 
 #showcase a {
@@ -219,7 +220,7 @@ ul.tabs li {
 }
 
 #showcase .app .appstore-badge {
-    padding-top: 15px;
+    padding: 15px 0;
 }
 
 #showcase #page_control {
