@@ -141,18 +141,22 @@ ul.tabs li {
 ----------------------------------------*/
 
 #showcase {
-    margin: 30px;
+    margin: 0;
     background-color: black;
     background-image: url('../images/app-bg.png');
     background-repeat: no-repeat;
     color: #ddd;
     position: relative;
-    border-radius: 20px;
-    -moz-border-radius: 20px;
+    border-radius: 10px;
+    -moz-border-radius: 10px;
+    width: 780px;
 }
 
 #apps {
+    border-left: 1px solid #666;
     position: relative;
+    margin: 0;
+    width: 619px;
 }
 
 #showcase .detail {
@@ -168,7 +172,7 @@ ul.tabs li {
 }
 
 #showcase .app {
-    padding: 30px 100px;
+/*    padding: 30px 100px;*/
 }
 
 #showcase .app h2 {
@@ -195,11 +199,11 @@ ul.tabs li {
 
 #showcase .app .screenshot {
     float: left;
-    max-width: 240px;
+    max-width: 200px;
 }
 
 #showcase .app .description {
-    margin-left: 265px;
+    margin-left: 220px;
     padding: 0px;
 }
 
@@ -216,6 +220,35 @@ ul.tabs li {
 
 #showcase .app .appstore-badge {
     padding-top: 15px;
+}
+
+#showcase #page_control {
+    position: relative;
+    float: left;
+    height: 100%;
+    width: 160px;
+    top: 40px;
+    left: 0;
+    height: 100%;
+}
+
+#showcase #page_control a {
+    display: block;
+    font-size: 15px;
+    color: white;
+    padding: 10px 10px;
+    text-align: left;
+    text-decoration: none;
+    border-top: 1px solid #666;
+    border-bottom: 1px solid #666;
+}
+
+#showcase #page_control a+a {
+    border-top-width: 0;
+}
+
+#showcase #page_control a:hover {
+    background-color: #09f;
 }
 
 /* Footer

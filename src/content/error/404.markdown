@@ -2,4 +2,4 @@
 
 Oops! We couldn't find the page you were looking for.
 
-Please go back to the Goo homepage and try again.
+Please go back to the [Goo homepage](/) and try again.
