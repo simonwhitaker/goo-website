@@ -43,3 +43,5 @@ data_sources:
 deploy:
     default:
         dst: "goosoft@goosoftware.co.uk:~/goosoftware.co.uk"
+
+base_url: http://www.goosoftware.co.uk/
