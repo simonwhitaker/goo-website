@@ -1,4 +1,77 @@
 title: "Fantastic Apps for iPhone, iPad and iPod Touch"
 description: "Goo Software Ltd is an independent UK-based software house specialising in development of apps for iPhone, iPad and iPod Touch."
 js_imports:
- - showcase.js
+    - showcase.js
+
+apps:
+ -  name: The xx
+    slogan: Innovative video experience
+    itunes_url: http://itunes.apple.com/gb/app/the-xx/id394653020?mt=8
+    image: /images/apps/the-xx.png
+    description:
+        - > Using this fun and unique app, you and up to two friends can 
+            play tracks from the xx's award-winning debut album <em>XX</em> 
+            across multiple iPhones or iPod Touches.
+        - > <span class="quotation">
+            &quot;An ingenious use of technology&quot; 
+            <span class="source"> &mdash; The Guardian</span>
+            </span>
+    client: Beggars Group Ltd
+    platform: iPhone and iPod Touch
+
+ # -  name: ooOOh!
+ #    slogan: Get her!
+ #    itunes_url: http://www.goosoftware.co.uk/
+ #    image: /images/apps/ooooh.png
+ #    description:
+ #        -   The ultimate in digital retorts
+ #    client: <a href="http://www.hicksdesign.co.uk">Hicksdesign</a>
+ #    platform: "iPhone, iPad and iPod Touch"
+
+ -  name: RSA Vision
+    slogan: Enlightenment to go
+    itunes_url: http://itunes.apple.com/gb/app/rsa-vision/id397348011?mt=8
+    image: /images/apps/rsa-vision.png 
+    description:
+        - > The RSA Vision app brings to you the latest videos from the 
+            RSA's free public events programme. You can browse by category, 
+            search for videos and compile a playlist of your favourite 
+            videos to watch later.
+        -   (Check out the RSAnimate category - they're <em>really</em> great!)
+    client: <a href="http://www.torchbox.com/">Torchbox Ltd</a>
+    platform: iPhone and iPod Touch
+
+ -  name: iBreastCheck
+    slogan: Helping you to be breast aware
+    itunes_url: http://itunes.apple.com/gb/app/ibreastcheck/id391746205?mt=8
+    image: /images/apps/ibreastcheck.png
+    description:
+        - > iBreastCheck from breast cancer charity Breakthrough helps 
+            you to be breast aware with a little TLC: Touch, Look, Check.
+        - > The app has video and slideshow content explaining how to 
+            check your breasts, a reminder service to help you to remember 
+            to check regularly, and more.
+    client: <a href="http://www.torchbox.com/">Torchbox Ltd</a>
+    platform: iPhone and iPod Touch
+
+ -  name: Exam Countdown
+    slogan: Track your exams the fun way
+    itunes_url: http://itunes.apple.com/gb/app/exam-countdown/id372962356?mt=8
+    image: /images/apps/exam-countdown.png
+    description: 
+        - > The Exam Countdown app allows students to keep track of 
+            forthcoming exams and share their thoughts via Facebook.
+    client: Pearson Education Ltd
+    platform: iPhone and iPod Touch
+
+ -  name: Sports Massager
+    itunes_url: http://itunes.apple.com/gb/app/sports-massager/id352993865?mt=8
+    slogan: Let your phone take the strain
+    image: /images/apps/sports-massager.png
+    description:
+        - > Aching after a great workout? Let Dan The Man take the strain! 
+            Just hit the button then enjoy a relaxing massage from Dan The 
+            Man in this fun app - Goo's first foray onto the App Store.
+    platform: iPhone
+
+

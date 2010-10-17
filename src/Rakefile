@@ -6,3 +6,6 @@ task :compile do |t|
 end
 
 task :default => [:compile]
+
+desc "Builds and deploys to goosoftware.co.uk"
+task :deploy => [:compile, 'deploy:rsync']

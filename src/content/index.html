@@ -6,156 +6,29 @@
 </p>
 <div id="showcase">
     <div id="apps">
-        <!-- XX app -->
-        <div class="app" id="app-xx">
+        
+        <% for app in @item[:apps]%>
+        <div class="app" id="<%= app[:name].downcase.gsub(' ','-') %>">
             <h2>
-                <a href="http://itunes.apple.com/gb/app/the-xx/id394653020?mt=8">The xx</a>
-                <span class="appslogan">Innovative video experience</span>
+                <a href="<%= app[:itunes_link] %>"><%= app[:name] %></a>
+                <span class="appslogan"><%= app[:slogan]%></span>
             </h2>
-            <a href="http://itunes.apple.com/gb/app/the-xx/id394653020?mt=8">
-                <img src="/images/apps/the-xx.png" class="screenshot" alt="app screenshot" border="0">
-            </a>
+            <a href="<%= app[:itunes_link] %>"><img src="<%= app[:image] %>" class="screenshot" alt="app screenshot" border="0"></a>
             <div class="description">
-                <p>
-                    Using this fun and unique app, you and up to two friends can play tracks from the 
-                    xx's award-winning debut album <em>XX</em> across multiple iPhones or iPod Touches.
-                </p>
-                <p class="quotation">
-                    &quot;An ingenious use of technology&quot; <span class="source"> &mdash; The Guardian</span>
-                </p>
+                <% for desc in app[:description]%>
+                <p><%= desc %></p>
+                <% end %>
 
-                <div class="appstore-badge">
-                    <a href="http://itunes.apple.com/gb/app/the-xx/id394653020?mt=8"><img src="/images/app-store-badge-clipped.png" alt="App Store Badge Clipped" border="0"></a>
-                </div>
-                    
-                <div class="detail">
-                    Client: Beggars Group Ltd
-                </div>
-                <div class="detail">
-                    Platform: iPhone and iPod Touch
-                </div>
+                <div class="appstore-badge"><a href="<%= app[:itunes_link] %>"><img src="/images/app-store-badge-clipped.png" alt="App Store Badge Clipped" border="0"></a></div>
+                <div class="detail">Client: <%= app[:client] %></div>
+                <div class="detail">Platform: <%= app[:platform] %></div>
             </div>
             <div class="app-end"></div>
         </div>
-        <!-- .app -->
-        <!-- RSA Vision app -->
-        <div class="app" id="app-rsa-vision">
-            <h2>
-                <a href="http://itunes.apple.com/gb/app/rsa-vision/id397348011?mt=8">RSA Vision</a>
-                <span class="appslogan">Enlightenment to go</span>
-            </h2>
-            <a href="http://itunes.apple.com/gb/app/rsa-vision/id397348011?mt=8">
-                <img src="/images/apps/rsa-vision.png" class="screenshot" alt="app screenshot" border="0">
-            </a>
-            <div class="description">
-                <p>
-                    The RSA Vision app brings to you the latest videos from the RSA's 
-                    free public events programme. You can browse by category, search 
-                    for videos and compile a playlist of your favourite videos to watch 
-                    later.
-                </p>
-                <p>
-                    (Check out the RSAnimate category - they're <em>really</em> great!)
-                </p>
-                <div class="appstore-badge">
-                    <a href="http://itunes.apple.com/gb/app/rsa-vision/id397348011?mt=8"><img src="/images/app-store-badge-clipped.png" alt="App Store Badge Clipped" border="0"></a>
-                </div>
-                <div class="detail">
-                    Client: <a href="http://www.torchbox.com/">Torchbox Ltd</a>
-                </div>
-                <div class="detail">
-                    Platform: iPhone and iPod Touch
-                </div>
-            </div>
-            <div class="app-end"></div>
-        </div>
-        <!-- .app -->
-        <!-- iBreastCheck app -->
-        <div class="app" id="app-ibreastcheck">
-            <h2>
-                <a href="http://itunes.apple.com/gb/app/ibreastcheck/id391746205?mt=8">iBreastCheck</a>
-                <span class="appslogan">Helping you to be breast aware</span>
-            </h2>
-                
-            <a href="http://itunes.apple.com/gb/app/ibreastcheck/id391746205?mt=8">
-                <img src="/images/apps/ibreastcheck.png" class="screenshot" alt="app screenshot" border="0">
-            </a>
-            <div class="description">
-                <p>
-                    iBreastCheck from breast cancer charity Breakthrough helps you 
-                    to be breast aware with a little TLC: Touch, Look, Check.
-                </p>
-                <p>
-                    The app has video and slideshow content explaining how to check 
-                    your breasts, a reminder service to help you to remember to check 
-                    regularly, and more.
-                </p>
-                <div class="appstore-badge">
-                    <a href="http://itunes.apple.com/gb/app/ibreastcheck/id391746205?mt=8">
-                        <img src="/images/app-store-badge-clipped.png" alt="App Store Badge Clipped" border="0">
-                    </a>
-                </div>
-                <div class="detail">
-                    Client: <a href="http://www.torchbox.com/">Torchbox Ltd</a>
-                </div>
-                <div class="detail">
-                    Platform: iPhone and iPod Touch
-                </div>
-            </div>
-            <div class="app-end"></div>
-        </div><!-- .app -->
-        <!-- Exam Countdown app -->
-        <div class="app" id="app-exam-countdown">
-            <h2>
-                <a href="http://itunes.apple.com/gb/app/exam-countdown/id372962356?mt=8">Exam Countdown</a>
-                <span class="appslogan">Track your exams the fun way</span>
-            </h2>
-            <a href="http://itunes.apple.com/gb/app/exam-countdown/id372962356?mt=8">
-                <img src="/images/apps/exam-countdown.png" class="screenshot" alt="app screenshot" border="0">
-            </a>
-            <div class="description">
-                <p>
-                    The Exam Countdown app allows students to keep track of forthcoming exams 
-                    and share their thoughts via Facebook.
-                </p>
-                <div class="appstore-badge">
-                    <a href="http://itunes.apple.com/gb/app/exam-countdown/id372962356?mt=8">
-                        <img src="/images/app-store-badge-clipped.png" alt="App Store Badge Clipped" border="0">
-                    </a>
-                </div>
-                <div class="detail">
-                    Client: Pearson Education Ltd
-                </div>
-                <div class="detail">
-                    Platform: iPhone and iPod Touch
-                </div>
-            </div>
-            <div class="app-end"></div>
-        </div><!-- .app -->
-        <!-- Sports Massager app -->
-        <div class="app" id="app-sports-massager">
-            <h2>
-                <a href="http://itunes.apple.com/gb/app/sports-massager/id352993865?mt=8">Sports Massager</a>
-                <span class="appslogan">Let your phone take the strain</span>
-            </h2>
-            <a href="http://itunes.apple.com/gb/app/sports-massager/id352993865?mt=8">
-                <img src="/images/apps/sports-massager.png" class="screenshot" alt="app screenshot" border="0">
-            </a>
-            <div class="description">
-                <p>
-                    Aching after a great workout? Let Dan The Man take the strain! Just hit the button then enjoy a relaxing massage from Dan The Man in this fun app - Goo's first foray onto the App Store.
-                </p>
-                <div class="appstore-badge">
-                    <a href="http://itunes.apple.com/gb/app/sports-massager/id352993865?mt=8"><img src="/images/app-store-badge-clipped.png" alt="App Store Badge Clipped" border="0"></a>
-                </div>
-                <div class="detail">
-                    Platform: iPhone
-                </div>
-            </div>
-            <div class="app-end"></div>
-        </div><!-- .app -->
+        <% end %>
+        
         <!-- Habilis -->
-        <div class="app" id="app-habilis">
+        <div class="app" id="habilis">
             <h2>
                 <a href="http://www.gethabilis.com/">Habilis</a>
                 <span class="appslogan">The email-to-Dropbox gateway</span>
@@ -165,13 +38,24 @@
             </a>
             <div class="description">
                 <p>
-                    Here at Goo Towers we really love iPads and we really love <a href="http://www.dropbox.com/">Dropbox.com</a>, so it niggled us that we couldn't create content on our iPads and upload it straight to Dropbox. We don't like being niggled, so we went ahead and invented Habilis, the email-to-Dropbox gateway.
+                    Here at Goo Towers we really love iPads and we really 
+                    love <a href="http://www.dropbox.com/">Dropbox.com</a>, 
+                    so it niggled us that we couldn't create content on our 
+                    iPads and upload it straight to Dropbox. We don't like 
+                    being niggled, so we went ahead and invented Habilis, 
+                    the email-to-Dropbox gateway.
                 </p>
                 <p>
-                    Using Habilis is really simple. Visit <a href="http://www.gethabilis.com">gethabilis.com</a>, use the single-click sign-up and you'll get your own gethabilis.com email address. Email files to that address and they'll appear in your Dropbox.com dropbox. We just couldn't make it any easier!
+                    Using Habilis is really simple. Visit 
+                    <a href="http://www.gethabilis.com">gethabilis.com</a>, 
+                    use the single-click sign-up and you'll get your own 
+                    gethabilis.com email address. Email files to that address 
+                    and they'll appear in your Dropbox.com dropbox. We just 
+                    couldn't make it any easier!
                 </p>
             </div>
             <div class="app-end"></div>
         </div><!-- .app -->
+        
     </div><!-- #apps -->
 </div><!-- #showcase -->
