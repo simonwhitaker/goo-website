@@ -19,7 +19,9 @@
                 <p><%= desc %></p>
                 <% end %>
 
-                <div class="appstore-badge"><a href="<%= app[:itunes_link] %>"><img src="/images/app-store-badge-clipped.png" alt="App Store Badge Clipped" border="0"></a></div>
+                <div class="appstore-badge">
+                    <a href="<%= app[:itunes_link] %>"><img src="/images/app-store-badge-clipped.png" alt="App Store Badge Clipped" border="0"></a>
+                </div>
                 <% if app[:client] %>
                 <div class="detail">Client: <%= app[:client] %></div>
                 <% end %>

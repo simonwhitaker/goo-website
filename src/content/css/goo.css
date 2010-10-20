@@ -140,7 +140,7 @@ ul.tabs li {
 ----------------------------------------*/
 
 #showcase {
-    margin: 0;
+    margin: 0 0 30px 0;
     background-color: black;
     background-image: url('../images/app-bg.png');
     background-repeat: no-repeat;

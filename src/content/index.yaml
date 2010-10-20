@@ -4,20 +4,20 @@ js_imports:
     - showcase.js
 
 apps:
- -  name: The xx
-    slogan: Innovative video experience
-    itunes_url: http://itunes.apple.com/gb/app/the-xx/id394653020?mt=8
-    image: /images/apps/the-xx.png
-    description:
-        - > Using this fun and unique app, you and up to two friends can 
-            play tracks from the xx's award-winning debut album <em>XX</em> 
-            across multiple iPhones or iPod Touches.
-        - > <span class="quotation">
-            &quot;An ingenious use of technology&quot; 
-            <span class="source"> &mdash; The Guardian</span>
-            </span>
-    client: Beggars Group Ltd
-    platform: iPhone and iPod Touch
+ # -  name: The xx
+ #    slogan: Innovative video experience
+ #    itunes_url: http://itunes.apple.com/gb/app/the-xx/id394653020?mt=8
+ #    image: /images/apps/the-xx.png
+ #    description:
+ #        - > Using this fun and unique app, you and up to two friends can 
+ #            play tracks from the xx's award-winning debut album <em>XX</em> 
+ #            across multiple iPhones or iPod Touches.
+ #        - > <span class="quotation">
+ #            &quot;An ingenious use of technology&quot; 
+ #            <span class="source"> &mdash; The Guardian</span>
+ #            </span>
+ #    client: Beggars Group Ltd
+ #    platform: iPhone and iPod Touch
 
  # -  name: ooOOh!
  #    slogan: Get her!
