@@ -34,16 +34,6 @@ compile '*' do
     end
 end
 
-# compile '*' do
-#     if item[:extension] == 'html' then
-#         filter :erb
-#         layout 'goo'
-#     elsif item[:extension] == 'markdown' then
-#         filter :kramdown
-#         layout 'goo'
-#     end
-# end
-
 route '/blog/feed/' do
     '/blog.xml'
 end
