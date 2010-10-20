@@ -1,0 +1,113 @@
+@import url('goo.css');
+
+body {
+    width: 100%;
+}
+
+#content {
+    margin-right: 220px;
+}
+
+/* Monochrome nav */
+
+#nav .tabs li a {
+    background-color: #aaa;
+    color: white;
+}
+
+#nav .tabs li a:hover {
+    background-color: #555;
+    color: white;
+}
+
+#nav .tabs li a.selected {
+    background-color: #08d;
+}
+
+/* Blog article navigation */
+.blog-nav {
+    margin: 12px 0;
+    font-size: 13px;
+}
+
+.blog-nav .nav {
+    padding: 0;
+    margin: 0;
+}
+
+.blog-nav .nav+.nav {
+    border-left: 1px dotted #aaa;
+    padding-left: 10px;
+    margin-left: 10px;
+}
+
+/* Misc blog formatting */
+
+.meta {
+    color: #666;
+    font-style: italic;
+}
+
+blockquote {
+    border-left: 2px solid #08d;
+    padding-left: 10px;
+    margin-left: 0;
+    color: #08d;
+}
+
+a[href] {
+    color: #08d;
+}
+
+a[href]:visited {
+    color: #333;
+}
+
+/* Latest posts */
+
+#sidebar {
+    float: right;
+    width: 200px;
+    padding: 30px 10px;
+    margin: 0;
+    font-size: 13px;
+    text-align: right;
+    border-left: 1px solid #ddd;
+}
+
+#sidebar h2 {
+    color: #A0B400;
+    padding: 0 10px;
+}
+
+#latest-posts ul {
+    margin: 0;
+    padding: 0;
+}
+
+#latest-posts li {
+    display: block;
+    padding: 0;
+}
+
+#latest-posts li a {
+    display: block;
+    padding: 5px 10px;
+    text-decoration: none;
+    color: #333;
+}
+
+#latest-posts li a.selected,
+#latest-posts li a:hover {
+    background-color: #555;
+    color: white;
+}
+
+/* Gist formatting */
+ .gist {
+     font-size: 13px;
+}
+
+#footer {
+    clear: both;
+}

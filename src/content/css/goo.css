@@ -97,7 +97,7 @@ ul.tabs li {
 #nav {
     position: absolute;
     right: 0px;
-    top: 30px;
+    top: 10px;
 }
 
 #nav .tabs {
@@ -135,7 +135,12 @@ ul.tabs li {
     padding: 0 30px;
 }
 
-
+img.framed {
+    border: 1px solid #ccc;
+    padding: 3px;
+    margin: 8px;
+    
+}
 /* App showcase
 ----------------------------------------*/
 

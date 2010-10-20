@@ -1,0 +1,80 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width">
+        <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+        <% if @item[:description] %>
+        <meta name="description" content="<%= @item[:description] %>">
+        <% end %>
+        <title>
+            Goo Software Blog - <%= @item[:title] %>
+        </title>
+        <link rel="alternate" type="application/atom+xml" title="Goo Software Blog" href="/blog.xml" />
+        <link rel="stylesheet" href="/css/blog.css" type="text/css" media="screen" charset="utf-8">
+        <script type="text/javascript" charset="utf-8" src="js/google-analytics.js"></script>
+        <script type="text/javascript" charset="utf-8" src="js/jquery-1.4.2.min.js"></script>
+        <% if @item[:js_imports] %>
+        <% for js in @item[:js_imports] %>
+        <script type="text/javascript" charset="utf-8" src="js/<%= js %>"></script>
+        <% end %>
+        <% end %>
+    </head>
+    <body>
+        <div id="main" class="blog">
+            <div id="header">
+                <a href="/"><img src="/images/goo-logo-333.png" id="logo" width="200" height="118" alt="Goo Logo" border="0" name="logo"></a>
+                <div id="slogan">
+                    Thoughts on developing fantastic apps for iPhone, iPad and iPod Touch
+                </div>
+            </div>
+            <div id="nav">
+                <ul class="tabs">
+                    <% for nl in navlinks %>
+                    <li>
+                        <a <% if "/blog/" == nl[:url] %>class="selected"<% end %> href="<%= nl[:url] %>"><%= nl[:text] %></a>
+                    </li>
+                    <% end %>
+                </ul>
+            </div>
+            <div id="sidebar">
+                <div id="latest-posts">
+                    <h2>Latest posts</h2>
+                    <ul>
+                        <% for a in sorted_articles[0,5] %>
+                        <li><a href="<%= a.path %>" <%if @item.identifier == a.identifier%>class="selected"<%end%>><%= a[:title] %></a></li>
+                        <% end %>
+                    </ul>
+                </div>
+            </div>
+            <div id="content">
+                <h1><%= @item[:title] %></h1>
+                <div class="meta">
+                    <a href="/blog.xml"><img src="/images/feed-icon-14x14.png" border="0"></a>
+                    Posted <%= @item[:created_at] %> by <%= @item[:author_name] or @config[:author_name] %>
+                </div>
+                <div class="blog-nav">
+                    <% index = sorted_articles.index(@item).to_i %>
+                    
+                    <% if @item != sorted_articles.last then %>
+                    <span class="nav previous">
+                        &larr; <a href="<%= sorted_articles[index + 1].path %>"><%= sorted_articles[index + 1][:title]%></a>
+                    </span>
+                    <% end %>
+
+                    <% if @item != sorted_articles.first then %>
+                    <span class="nav next">
+                        <a href="<%= sorted_articles[index-1].path %>"><%= sorted_articles[index-1][:title]%></a> &rarr;
+                    </span>
+                    <% end %>
+                    
+                </div>
+                <%= yield %>
+            </div><!-- #content -->
+            <div style="clear:both"> </div>
+        </div><!-- #main -->
+        <div id="footer">
+            Goo Software Ltd, registered in England and Wales with company number 7242280.
+            <br>Registered address: 88 Lucerne Avenue, Bicester OX26 3EL, UK
+        </div>
+    </body>
+</html>

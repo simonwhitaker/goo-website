@@ -10,6 +10,20 @@
 #   item, use the pattern “/about/*/”; “/about/*” will also select the parent,
 #   because “*” matches zero or more characters.
 
+compile '/blog/feed/' do 
+    filter :erb
+end
+
+compile '/blog/*' do 
+    if item[:extension] == 'html' then
+        filter :erb
+        layout 'blog'
+    elsif item[:extension] == 'markdown' then
+        filter :kramdown
+        layout 'blog'
+    end
+end
+
 compile '*' do
     if item[:extension] == 'html' then
         filter :erb
@@ -18,6 +32,10 @@ compile '*' do
         filter :kramdown
         layout 'goo'
     end
+end
+
+route '/blog/feed/' do
+    '/blog.xml'
 end
 
 route %r{^/(css|js|images)/.*/} do
@@ -32,8 +50,12 @@ route '/htaccess/' do
     '/.htaccess'
 end
 
+route '/blog/*/' do
+    '/blog/' + item[:title].to_slug + '/index.html'
+end
+
 route '*' do
-  item.identifier + 'index.html'
+    item.identifier + 'index.html'
 end
 
 layout '*', :erb

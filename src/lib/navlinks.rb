@@ -4,6 +4,6 @@ def navlinks
         { :text => "Contact",   :url => "/contact/" },
         { :text => "About",     :url => "/about/" },
         { :text => "Help",      :url => "/help/" },
-        { :text => "Blog",      :url => "http://blog.goosoftware.co.uk/" },
+        { :text => "Blog",      :url => "/blog/" },
     ]
 end
