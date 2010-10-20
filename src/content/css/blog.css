@@ -4,11 +4,19 @@ body {
     width: 100%;
 }
 
+#header {
+    border-bottom: 1px solid #ddd;
+}
+
 #content {
     margin-right: 220px;
 }
 
 /* Monochrome nav */
+
+#nav {
+    top: 20px;
+}
 
 #nav .tabs li a {
     background-color: #aaa;
@@ -43,6 +51,11 @@ body {
 
 /* Misc blog formatting */
 
+h1 {
+    font-size: 33px;
+    line-height: 1.1em;
+}
+
 .meta {
     color: #666;
     font-style: italic;
@@ -75,7 +88,7 @@ a[href]:visited {
 #sidebar {
     float: right;
     width: 200px;
-    padding: 30px 10px;
+    padding: 20px 10px;
     margin: 0;
     font-size: 13px;
     text-align: right;
@@ -83,7 +96,8 @@ a[href]:visited {
 }
 
 #sidebar h2 {
-    color: #A0B400;
+    color: #09f;
+    text-transform: uppercase;
     padding: 0 10px;
 }
 
@@ -104,10 +118,12 @@ a[href]:visited {
     color: #333;
 }
 
-#latest-posts li a.selected,
+#latest-posts li a.selected {
+    font-weight: bold;
+}
+
 #latest-posts li a:hover {
-    background-color: #555;
-    color: white;
+    text-decoration: underline;
 }
 
 /* Gist formatting */

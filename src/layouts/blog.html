@@ -29,11 +29,15 @@
             </div>
             <div id="nav">
                 <ul class="tabs">
-                    <% for nl in navlinks %>
                     <li>
-                        <a <% if "/blog/" == nl[:url] %>class="selected"<% end %> href="<%= nl[:url] %>"><%= nl[:text] %></a>
+                        <a href="/">Goo Home</a>
                     </li>
-                    <% end %>
+                    <li>
+                        <a href="/blog/">Blog Index</a>
+                    </li>
+                    <li>
+                        <a href="<%= sorted_articles.first.path %>">Latest Post</a>
+                    </li>
                 </ul>
             </div>
             <div id="sidebar">
@@ -90,9 +94,5 @@
             </div><!-- #content -->
             <div style="clear:both"> </div>
         </div><!-- #main -->
-        <div id="footer">
-            Goo Software Ltd, registered in England and Wales with company number 7242280.
-            <br>Registered address: 88 Lucerne Avenue, Bicester OX26 3EL, UK
-        </div>
     </body>
 </html>
