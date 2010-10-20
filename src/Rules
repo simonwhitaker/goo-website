@@ -14,25 +14,35 @@ compile '/blog/feed/' do
     filter :erb
 end
 
-compile '/blog/*' do 
-    if item[:extension] == 'html' then
-        filter :erb
-        layout 'blog'
-    elsif item[:extension] == 'markdown' then
+compile '*' do 
+    do_layout = false
+    
+    if item[:extension] == 'markdown' 
         filter :kramdown
-        layout 'blog'
+        do_layout = true
+    elsif item[:extension] =~ /r?html/
+        filter :erb
+        do_layout = true
+    end
+        
+    if do_layout then
+        if item[:kind] == 'article' or item[:kind] == 'draft'
+            layout 'blog'
+        else
+            layout 'goo'
+        end
     end
 end
 
-compile '*' do
-    if item[:extension] == 'html' then
-        filter :erb
-        layout 'goo'
-    elsif item[:extension] == 'markdown' then
-        filter :kramdown
-        layout 'goo'
-    end
-end
+# compile '*' do
+#     if item[:extension] == 'html' then
+#         filter :erb
+#         layout 'goo'
+#     elsif item[:extension] == 'markdown' then
+#         filter :kramdown
+#         layout 'goo'
+#     end
+# end
 
 route '/blog/feed/' do
     '/blog.xml'

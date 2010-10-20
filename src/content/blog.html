@@ -1,10 +1,11 @@
 ---
-title: Index
+title: Blog Index
 ---
-<p>This is my blog</p>
 
-<ul>
+<h1>Latest blog articles</h1>
+
+<ul class="blog-items">
     <% for article in sorted_articles %>
-    <li><a href="<%= article.path %>"><%= article[:title] %></a></li>
+    <li><span class="date"><%= article[:created_at]%></span> <a href="<%= article.path %>"><%= article[:title] %></a></li>
     <% end %>
 </ul>

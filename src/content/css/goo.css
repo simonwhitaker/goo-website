@@ -327,6 +327,24 @@ div.support-item {
     margin-left: 180px;
 }
 
+
+/* Blog index 
+----------------------------------------*/
+
+ul.blog-items {
+    padding-left: 0;
+}
+
+.blog-items li {
+    list-style-type: none;
+    line-height: 1.7em;
+}
+
+.blog-items li .date {
+    color: #999;
+    font-size: 12px;
+}
+
 @media screen and (max-device-width: 480px) {
     body {
         width: 480px;
