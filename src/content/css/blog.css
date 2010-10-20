@@ -95,35 +95,45 @@ a[href]:visited {
     border-left: 1px solid #ddd;
 }
 
-#sidebar h2 {
-    color: #09f;
-    text-transform: uppercase;
-    padding: 0 10px;
+#sidebar a {
+    color: #333;
 }
 
-#latest-posts ul {
+#sidebar a:hover {
+    color: #09f;
+}
+
+#sidebar .subscribe a {
+    background-image: url("/images/feed-icon-14x14.png");
+    background-position: right 0;
+    background-repeat: no-repeat;
+    padding-right: 17px;
+}
+
+#sidebar h2 {
+    color: #999;
+    font-size: 20px;
+    text-transform: uppercase;
+    padding: 0;
+}
+
+#sidebar ul {
     margin: 0;
     padding: 0;
 }
 
-#latest-posts li {
+#sidebar li {
     display: block;
     padding: 0;
 }
 
-#latest-posts li a {
+#sidebar li a {
     display: block;
-    padding: 5px 10px;
-    text-decoration: none;
-    color: #333;
+    padding: 5px 0;
 }
 
-#latest-posts li a.selected {
+#sidebar li a.selected {
     font-weight: bold;
-}
-
-#latest-posts li a:hover {
-    text-decoration: underline;
 }
 
 /* Gist formatting */

@@ -27,20 +27,17 @@
                     Thoughts on developing fantastic apps for iPhone, iPad and iPod Touch
                 </div>
             </div>
-            <div id="nav">
-                <ul class="tabs">
-                    <li>
-                        <a href="/">Goo Home</a>
-                    </li>
-                    <li>
-                        <a href="/blog/">Blog Index</a>
-                    </li>
-                    <li>
-                        <a href="<%= sorted_articles.first.path %>">Latest Post</a>
-                    </li>
-                </ul>
-            </div>
             <div id="sidebar">
+                <div class="subscribe">
+                    <a href="/blog.xml">Subscribe</a>
+                </div>
+                <div>
+                    <h2>Goo Software</h2>
+                    <ul>
+                        <li><a href="/">Goo home</a></li>
+                        <li><a href="/blog/">Blog index</a></li>
+                    </ul>
+                </div>
                 <div id="latest-posts">
                     <h2>Latest posts</h2>
                     <ul>
@@ -53,7 +50,6 @@
             <div id="content">
                 <h1><%= @item[:title] %></h1>
                 <div class="meta">
-                    <a href="/blog.xml"><img src="/images/feed-icon-14x14.png" border="0"></a>
                     Posted <%= @item[:created_at] %> by <%= @item[:author_name] or @config[:author_name] %>
                 </div>
                 <div class="blog-content">
