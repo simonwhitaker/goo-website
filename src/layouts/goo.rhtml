@@ -10,8 +10,8 @@
             Goo Software - <%= @item[:title] %>
         </title>
         <link rel="stylesheet" href="/css/goo.css" type="text/css" media="screen" charset="utf-8">
-        <script type="text/javascript" charset="utf-8" src="js/google-analytics.js"></script>
-        <script type="text/javascript" charset="utf-8" src="js/jquery-1.4.2.min.js"></script>
+        <script type="text/javascript" charset="utf-8" src="/js/google-analytics.js"></script>
+        <script type="text/javascript" charset="utf-8" src="/js/jquery-1.4.2.min.js"></script>
         <% if @item[:js_imports] %>
         <% for js in @item[:js_imports] %>
         <script type="text/javascript" charset="utf-8" src="js/<%= js %>"></script>
@@ -41,7 +41,7 @@
         </div><!-- #main -->
         <div id="footer">
             Goo Software Ltd, registered in England and Wales with company number 7242280.
-            <br>Registered address: 88 Lucerne Avenue, Bicester OX26 3EL, UK
+            Registered address: 88 Lucerne Avenue, Bicester OX26 3EL, UK
         </div>
     </body>
 </html>
