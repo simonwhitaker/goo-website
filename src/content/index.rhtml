@@ -15,7 +15,7 @@
             <div class="description">
                 <h2>
                     <a href="<%= app[:itunes_link] %>"><%= app[:name] %></a>
-                    <span class="appslogan"><%= app[:slogan]%></span>
+                    <span class="appslogan"<%if app[:slogan_colour]%> style="color:<%=app[:slogan_colour]%>"<%end%>><%= app[:slogan]%></span>
                 </h2>
                 <% for desc in app[:description]%>
                 <p><%= desc %></p>
@@ -43,7 +43,7 @@
             <div class="description">
                 <h2>
                     <a href="http://www.gethabilis.com/">Habilis</a>
-                    <span class="appslogan">The email-to-Dropbox gateway</span>
+                    <span class="appslogan" style="color:#A0B400">The email-to-Dropbox gateway</span>
                 </h2>
                 <p>
                     Here at Goo Towers we really love iPads and we really 

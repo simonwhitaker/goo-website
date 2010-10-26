@@ -19,17 +19,9 @@ apps:
  #    client: Beggars Group Ltd
  #    platform: iPhone and iPod Touch
 
- # -  name: ooOOh!
- #    slogan: Get her!
- #    itunes_url: http://www.goosoftware.co.uk/
- #    image: /images/apps/ooooh.png
- #    description:
- #        -   The ultimate in digital retorts
- #    client: <a href="http://www.hicksdesign.co.uk">Hicksdesign</a>
- #    platform: "iPhone, iPad and iPod Touch"
-
  -  name: RSA Vision
     slogan: Enlightenment to go
+    slogan_colour: "#CE5B02"
     itunes_url: http://itunes.apple.com/gb/app/rsa-vision/id397348011?mt=8
     image: /images/apps/rsa-vision.png 
     description:
@@ -43,6 +35,7 @@ apps:
 
  -  name: iBreastCheck
     slogan: Helping you to be breast aware
+    slogan_colour: "#C70064"
     itunes_url: http://itunes.apple.com/gb/app/ibreastcheck/id391746205?mt=8
     image: /images/apps/ibreastcheck.png
     description:
@@ -56,6 +49,7 @@ apps:
 
  -  name: Exam Countdown
     slogan: Track your exams the fun way
+    slogan_colour: "#888"
     itunes_url: http://itunes.apple.com/gb/app/exam-countdown/id372962356?mt=8
     image: /images/apps/exam-countdown.png
     description: 
@@ -67,6 +61,7 @@ apps:
  -  name: Sports Massager
     itunes_url: http://itunes.apple.com/gb/app/sports-massager/id352993865?mt=8
     slogan: Let your phone take the strain
+    slogan_colour: "#3956BD"
     image: /images/apps/sports-massager.png
     description:
         - > Aching after a great workout? Let Dan The Man take the strain! 

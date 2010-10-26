@@ -161,7 +161,7 @@ img.framed {
 }
 
 #showcase a {
-    color: #09f;
+    color: #fff;
 }
 
 .app-end {
@@ -184,8 +184,7 @@ img.framed {
 }
 
 #showcase .app h2 a:hover {
-    background-color: #09f;
-    color: white;
+    text-decoration: underline;
 }
 
 #showcase .app h2 .appslogan {
@@ -242,7 +241,6 @@ img.framed {
 
 #showcase #page_control a.selected {
     background-color: black;
-    color: #09f;
 }
 
 #showcase #page_control a+a {
@@ -264,6 +262,7 @@ img.framed {
     background-color: #f0f0f0;
     border-top: 1px solid #ddd;
     font-size: 11px;
+    text-shadow: #fff 0 1px 1px;
 }
 
 /* Contact page
