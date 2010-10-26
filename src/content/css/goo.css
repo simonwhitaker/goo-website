@@ -9,9 +9,6 @@ body {
     background-color: #ccc;
 }
 
-p, div, li {
-}
-
 p {
     line-height: 1.4em;
 }
@@ -45,7 +42,7 @@ a:visited {
 }
 
 #main {
-    padding: 20px 0;
+    padding: 0;
     background-color: white;
     position: relative;
 }
@@ -128,7 +125,7 @@ ul.tabs li {
 
 #content {
     color: #333;
-    padding: 0 30px;
+    padding: 0 30px 20px 30px;
 }
 
 img.framed {
@@ -141,22 +138,21 @@ img.framed {
 ----------------------------------------*/
 
 #showcase {
-    margin: 0 0 30px 0;
+    margin: 0;
     background-color: black;
     background-image: url('../images/app-bg.png');
     background-repeat: no-repeat;
     color: #ddd;
     position: relative;
-    border-radius: 10px;
-    -moz-border-radius: 10px;
-    width: 780px;
+    width: 100%;
 }
 
 #apps {
     border-left: 1px solid #666;
     position: relative;
     margin: 0;
-    width: 619px;
+    width: 689px;
+    height: 500px;
 }
 
 #showcase .detail {
@@ -205,7 +201,7 @@ img.framed {
 
 #showcase .app .description {
     margin-left: 220px;
-    padding: 0px;
+    padding: 0 15px;
 }
 
 #showcase .app .quotation {
@@ -227,7 +223,7 @@ img.framed {
     position: relative;
     float: left;
     height: 100%;
-    width: 160px;
+    width: 150px;
     top: 40px;
     left: 0;
     height: 100%;

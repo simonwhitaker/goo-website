@@ -38,7 +38,6 @@ $(function () {
             page_control.append(pager);
         });
         $('#apps').css('overflow','hidden');
-        $('#apps').css('height', '480px');
         $('#showcase').prepend(page_control);
     }
     if (r = location.href.match('#!(.+)')) {

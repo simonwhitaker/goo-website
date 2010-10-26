@@ -1,20 +1,22 @@
-<h1>
-    Welcome to Goo!
-</h1>
-<p>
-    We're a UK software house specialising in apps for iPhone, iPad and Android. Here's some of the stuff we've done.
-</p>
+<div id="content">
+    <h1>
+        Welcome to Goo!
+    </h1>
+    <p>
+        We're a UK software house specialising in apps for iPhone, iPad and Android. Here's some of the stuff we've done.
+    </p>
+</div>
 <div id="showcase">
     <div id="apps">
         
         <% for app in @item[:apps]%>
         <div class="app" id="<%= app[:name].downcase.gsub(' ','-') %>">
-            <h2>
-                <a href="<%= app[:itunes_link] %>"><%= app[:name] %></a>
-                <span class="appslogan"><%= app[:slogan]%></span>
-            </h2>
             <a href="<%= app[:itunes_link] %>"><img src="<%= app[:image] %>" class="screenshot" alt="app screenshot" border="0"></a>
             <div class="description">
+                <h2>
+                    <a href="<%= app[:itunes_link] %>"><%= app[:name] %></a>
+                    <span class="appslogan"><%= app[:slogan]%></span>
+                </h2>
                 <% for desc in app[:description]%>
                 <p><%= desc %></p>
                 <% end %>
@@ -35,14 +37,14 @@
         
         <!-- Habilis -->
         <div class="app" id="habilis">
-            <h2>
-                <a href="http://www.gethabilis.com/">Habilis</a>
-                <span class="appslogan">The email-to-Dropbox gateway</span>
-            </h2>
             <a href="http://www.gethabilis.com/">
                 <img src="/images/apps/habilis-logo-white.png" class="screenshot" alt="Habilis logo" border="0">
             </a>
             <div class="description">
+                <h2>
+                    <a href="http://www.gethabilis.com/">Habilis</a>
+                    <span class="appslogan">The email-to-Dropbox gateway</span>
+                </h2>
                 <p>
                     Here at Goo Towers we really love iPads and we really 
                     love <a href="http://www.dropbox.com/">Dropbox.com</a>, 
