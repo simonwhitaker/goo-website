@@ -322,10 +322,15 @@ div.support-item {
 /* Code
 ----------------------------------------*/
 
+pre, code {
+    font-family: 'Bitstream Vera Sans Mono', Courier, monospace;
+    font-size: 12px;
+}
+
 pre {
-    padding: 12px 18px;
-    background-color: #def;
-    border: 1px solid #cde;
+    padding: 3px;
+    background-color: #e0e8f0;
+    border: 1px solid #ccc;
 }
 
 /* Blog index 
