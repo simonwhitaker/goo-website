@@ -11,10 +11,10 @@
         
         <% for app in @item[:apps]%>
         <div class="app" id="<%= app[:name].downcase.gsub(' ','-') %>">
-            <a href="<%= app[:itunes_link] %>"><img src="<%= app[:image] %>" class="screenshot" alt="app screenshot" border="0"></a>
+            <a href="<%= app[:itunes_url] %>"><img src="<%= app[:image] %>" class="screenshot" alt="app screenshot" border="0"></a>
             <div class="description">
                 <h2>
-                    <a href="<%= app[:itunes_link] %>"><%= app[:name] %></a>
+                    <a href="<%= app[:itunes_url] %>"><%= app[:name] %></a>
                     <span class="appslogan"<%if app[:slogan_colour]%> style="color:<%=app[:slogan_colour]%>"<%end%>><%= app[:slogan]%></span>
                 </h2>
                 <% for desc in app[:description]%>
@@ -22,7 +22,7 @@
                 <% end %>
 
                 <div class="appstore-badge">
-                    <a href="<%= app[:itunes_link] %>"><img src="/images/app-store-badge-clipped.png" alt="App Store Badge Clipped" border="0"></a>
+                    <a href="<%= app[:itunes_url] %>"><img src="/images/app-store-badge-clipped.png" alt="App Store Badge Clipped" border="0"></a>
                 </div>
                 <% if app[:client] %>
                 <div class="detail">Client: <%= app[:client] %></div>
