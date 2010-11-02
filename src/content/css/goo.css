@@ -425,19 +425,25 @@ ul.blog-items {
     }
     
     #showcase {
-        width: 100%;
+        width: 440px;
+        background-color: black;
         border-radius: 0;
         -moz-border-radius: 0;
         padding: 0 20px;
-        margin: 20px -20px 0px -20px;
+        margin: 20px 0 0 0;
     }
     
     #showcase #apps {
         width: 100%;
         border-width: 0;
+        height: auto;
     }
     
     #showcase .app h2 a {
+    }
+
+    #showcase .app+.app {
+        border-top: 1px solid #333;
     }
 
     #showcase .app {
@@ -458,12 +464,10 @@ ul.blog-items {
         margin: 0;
         padding: 20px 10px;
         text-align: center;
-        color: #fff;
         font-size: 10px;
     }
 
     #footer a {
-        color: white;
     }   
     
     .portrait {
