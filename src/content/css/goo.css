@@ -43,8 +43,12 @@ a:visited {
 
 #main {
     padding: 0;
+    margin: 20px 0 30px 0;
     background-color: white;
     position: relative;
+    -moz-box-shadow:    0 4px 8px #555;
+    -webkit-box-shadow: 0 4px 8px #555;
+    box-shadow:         0 4px 8px #555;
 }
 
 /* Common bits and bobs
@@ -60,20 +64,20 @@ p img.icon[height="16"] {
 
 #header {
     position: relative;
-    height: 150px;
+    height: 180px;
 }
 
 #logo {
     position: absolute;
     left: 40px;
-    top: 10px;
+    top: 40px;
 }
 
 #slogan {
     position: absolute;
     font-size: 17px;
     left: 130px;
-    top: 110px;
+    top: 140px;
     font-family: "Century Gothic", "Helevica Neue", Arial, Helvetica, sans-serif;
     color: #09f;
 }
@@ -90,7 +94,7 @@ ul.tabs li {
 #nav {
     position: absolute;
     right: 0px;
-    top: 10px;
+    top: 40px;
 }
 
 #nav .tabs {
@@ -384,15 +388,21 @@ ul.blog-items {
         margin: 0;
         padding: 0;
         background-image: none;
+        -moz-box-shadow:    none;
+        -webkit-box-shadow: none;
+        box-shadow:         none;
+        
     }
 
     #logo {
         left: 10px;
+        top: 20px;
     }
 
     #slogan {
         left: 120px;
-        width: 300px;
+        width: 340px;
+        top: 120px;
     }
     #nav {
         position: relative;
@@ -414,7 +424,7 @@ ul.blog-items {
     }
 
     #nav .tabs li+li {
-        margin-left: 15px;
+        margin-left: 1px;
     }
 
     #content {
