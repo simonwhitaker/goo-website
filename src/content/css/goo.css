@@ -6,7 +6,7 @@ body {
     font-family: Helvetica, Arial, sans-serif;
     width: 840px;
     margin: 0 auto;
-    background-color: #ccc;
+    background-color: #aaa;
 }
 
 p {
@@ -46,9 +46,9 @@ a:visited {
     margin: 20px 0 30px 0;
     background-color: white;
     position: relative;
-    -moz-box-shadow:    0 4px 8px #555;
-    -webkit-box-shadow: 0 4px 8px #555;
-    box-shadow:         0 4px 8px #555;
+    -moz-box-shadow:    0 4px 8px #333;
+    -webkit-box-shadow: 0 4px 8px #333;
+    box-shadow:         0 4px 8px #333;
 }
 
 /* Common bits and bobs
