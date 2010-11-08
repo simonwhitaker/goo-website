@@ -1,7 +1,7 @@
-@import url('goo.css');
+@import url('base.css');
 
 body {
-    width: 100%;
+    max-width: 1200px;
 }
 
 #header {
