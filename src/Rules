@@ -17,7 +17,7 @@ end
 compile '*' do 
     do_layout = false
     
-    if item[:extension] == 'markdown' 
+    if item[:extension] =~ /(md|markdown)/
         filter :kramdown
         do_layout = true
     elsif item[:extension] =~ /r?html/

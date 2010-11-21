@@ -14,7 +14,8 @@ First you instantiate an NSURLConnection using an NSURLRequest object:
     [conn release];
 
 Then elsewhere you write delegate methods to handle callbacks from the connection such as 
-`connection:didReceiveData:` when the delegate receives data from the connection, `connectionDidFinishLoading:` when the connection has finished loading, or 
+`connection:didReceiveData:` when the delegate receives data from the connection, 
+`connectionDidFinishLoading:` when the connection has finished loading, or 
 `connection:didFailWithError:` if it fails.
 
 The tricky thing there is: if I instantiate more than one NSURLConnection object, how do I know
@@ -33,16 +34,7 @@ Here's what I'd like to be able to do in `connection:didReceiveData:`, for examp
     }
     
 But sadly, the `uniqueId` method on NSURLConnection doesn't exist, and there isn't any other
-similar functionality available in NSURLConnection. I originally thought I might be able to use
-the NSURLConnection object's pointer address as a key into my buffers dictionary:
-
-    NSString *key = [NSString stringWithFormat:@"lu", &connection];
-    NSMutableData *data = [buffers objectForKey:key];
-    // do stuff with data
-
-but that doesn't work, because under some (maybe all?) circumstances the connection that gets 
-sent back to the delegate is a *copy* of the connection you created, so it has a different
-pointer address.
+similar functionality available in NSURLConnection. 
 
 So I decided to solve the problem by adding an instance variable to NSURLConnection. You
 can add methods to existing classes using categories, but to add an instance variable you
