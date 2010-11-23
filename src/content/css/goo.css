@@ -143,8 +143,18 @@ body {
     margin-left: 5px;
 }
 
+#showcase .app .install-links {
+    margin: 0 0 10px 0;
+}
+
 #showcase .app .appstore-badge {
-    padding: 15px 0;
+    padding: 0;
+}
+
+#showcase .app div.android-info {
+    float: right;
+    width: 220px;
+    font-size: 12px;
 }
 
 #showcase #page_control {

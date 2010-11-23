@@ -23,6 +23,7 @@ apps:
     slogan: Enlightenment to go
     slogan_colour: "#CE5B02"
     itunes_url: http://itunes.apple.com/gb/app/rsa-vision/id397348011?mt=8
+    android_package: com.goocode.rsavision
     image: /images/apps/rsa-vision.png 
     description:
         - > The RSA Vision app brings to you the latest videos from the 
@@ -31,7 +32,7 @@ apps:
             videos to watch later.
         -   (Check out the RSAnimate category - they're <em>really</em> great!)
     client: <a href="http://www.torchbox.com/">Torchbox Ltd</a>
-    platform: iPhone and iPod Touch
+    platform: "iPhone, iPod Touch, Android"
 
  -  name: iBreastCheck
     slogan: Helping you to be breast aware

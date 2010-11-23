@@ -21,9 +21,23 @@
                 <p><%= desc %></p>
                 <% end %>
 
-                <div class="appstore-badge">
-                    <a href="<%= app[:itunes_url] %>"><img src="/images/app-store-badge-clipped.png" alt="App Store Badge Clipped" border="0"></a>
+                <div class="install-links">
+                    <% if app[:android_package] %>
+                    <div class="android-info">
+                        To install on Android, search the marketplace for <%= app[:name] %> or scan 
+                        <a href="http://chart.apis.google.com/chart?cht=qr&amp;chs=400x400&amp;chld=Q%7C3&amp;chl=market://details?id=<%= app[:android_package] %>">this QR code</a>
+                    </div>
+                    <% end %>
+
+                    <% if app[:itunes_url] %>
+                    <div class="appstore-badge">
+                        <a href="<%= app[:itunes_url] %>"><img src="/images/app-store-badge-clipped.png" alt="App Store Badge Clipped" border="0"></a>
+                    </div>
+                    <% end %>
                 </div>
+                
+                <div style="clear:right"> </div>
+                
                 <% if app[:client] %>
                 <div class="detail">Client: <%= app[:client] %></div>
                 <% end %>
