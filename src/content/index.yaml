@@ -4,6 +4,19 @@ js_imports:
     - showcase.js
 
 apps:
+ -  name: BBC Bitesize Exam Alert
+    slogan: Track your exams the fun way
+    slogan_colour: "#39f"
+    itunes_url: http://itunes.apple.com/gb/app/gcse-bitesize-exam-alert/id414023535?mt=8
+    image: /images/apps/bbc-bitesize.png
+    description:
+        - > Our popular Exam Countdown app, re-branded 
+            for the BBC Bitesize iPhone app series.
+        - > Track your forthcoming exams, get study tips
+            and share with your friends via Facebook
+    client: BBC Bitesize / Pearson Education Ltd
+    platform: iPhone and iPod Touch
+    
  -  name: The xx
     slogan: Innovative video experience
     itunes_url: http://itunes.apple.com/gb/app/the-xx/id394653020?mt=8
