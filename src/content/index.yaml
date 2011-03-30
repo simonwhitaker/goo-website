@@ -12,7 +12,7 @@ apps:
     description:
         - > Our popular Exam Countdown app, re-branded 
             for the BBC Bitesize iPhone app series.
-        - > Track your forthcoming exams, get study tips
+        - > Track your forthcoming exams, get study tips 
             and share with your friends via Facebook
     client: BBC Bitesize / Pearson Education Ltd
     platform: iPhone and iPod Touch
