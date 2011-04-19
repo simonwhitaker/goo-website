@@ -4,6 +4,18 @@ js_imports:
     - showcase.js
 
 apps:
+ -  name: Lucky Voice
+    slogan: Sing your heart out!
+    slogan_colour: "#FE01B4"
+    itunes_url: http://itunes.apple.com/gb/app/lucky-voice-karaoke/id428963272?mt=8
+    image: /images/apps/lucky-voice.png
+    description:
+        - > The ultimate karaoke experience for your iPad!
+        - > Sing along to over 7,500 songs
+    client: Lucky Voice Ltd
+    platform: iPad
+    class: ipad
+ 
  -  name: BBC Bitesize Exam Alert
     slogan: Track your exams the fun way
     slogan_colour: "#39f"
@@ -19,6 +31,7 @@ apps:
     
  -  name: The xx
     slogan: Innovative video experience
+    slogan_colour: "#4e6072"
     itunes_url: http://itunes.apple.com/gb/app/the-xx/id394653020?mt=8
     image: /images/apps/the-xx.png
     description:

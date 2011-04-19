@@ -10,7 +10,7 @@
     <div id="apps">
         
         <% for app in @item[:apps]%>
-        <div class="app" id="<%= app[:name].downcase.gsub(' ','-') %>">
+        <div class="app <%= app[:class] %>" id="<%= app[:name].downcase.gsub(' ','-') %>">
             <a href="<%= app[:itunes_url] %>"><img src="<%= app[:image] %>" class="screenshot" alt="app screenshot" border="0"></a>
             <div class="description">
                 <h2>

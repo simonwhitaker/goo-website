@@ -127,8 +127,19 @@ body {
     max-width: 200px;
 }
 
+#showcase .app.ipad .screenshot {
+    float: left;
+    max-width: 320px;
+}
+
+
 #showcase .app .description {
     margin-left: 220px;
+    padding: 0 15px;
+}
+
+#showcase .app.ipad .description {
+    margin-left: 340px;
     padding: 0 15px;
 }
 
