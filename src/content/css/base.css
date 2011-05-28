@@ -40,16 +40,6 @@ a:visited {
     color: #3C4200;
 }
 
-#main {
-    padding: 0;
-    margin: 20px 0 30px 0;
-    background-color: white;
-    position: relative;
-    -moz-box-shadow:    0 4px 8px #333;
-    -webkit-box-shadow: 0 4px 8px #333;
-    box-shadow:         0 4px 8px #333;
-}
-
 /* Common bits and bobs
 ----------------------------------------*/
 
@@ -116,16 +106,3 @@ img.framed {
     text-shadow: #fff 0 1px 1px;
 }
 
-/* Code
-----------------------------------------*/
-
-pre, code {
-    font-family: 'Bitstream Vera Sans Mono', Courier, monospace;
-    font-size: 12px;
-}
-
-pre {
-    padding: 3px;
-    background-color: #e0e8f0;
-    border: 1px solid #ccc;
-}

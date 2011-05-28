@@ -1,15 +1,38 @@
 @import url('base.css');
 
 body {
+    background-color: #000;
     max-width: 1200px;
 }
 
 #header {
-    border-bottom: 1px solid #ddd;
+    border-bottom: 1px solid #444;
 }
 
 #content {
+    background-color: #000;
     margin-right: 220px;
+    color: #999;
+}
+
+#slogan {
+    color: #666;
+}
+
+/* Code
+----------------------------------------*/
+
+pre, code {
+    font-family: 'Bitstream Vera Sans Mono', Courier, monospace;
+    font-size: 14px;
+    color: #fff;
+}
+
+pre {
+    margin: 30px;
+    padding: 12px;
+    background-color: #333;
+    border-radius: 12px;
 }
 
 /* Monochrome nav */
@@ -44,7 +67,7 @@ body {
 }
 
 .blog-nav .nav+.nav {
-    border-left: 1px dotted #aaa;
+    border-left: 1px dotted #444;
     padding-left: 10px;
     margin-left: 10px;
 }
@@ -52,6 +75,7 @@ body {
 /* Misc blog formatting */
 
 h1 {
+    color: #09f;
     font-size: 33px;
     line-height: 1.1em;
 }
@@ -62,18 +86,17 @@ h1 {
 }
 
 blockquote {
-    border-left: 2px solid #08d;
-    padding-left: 20px;
-    margin-left: 20px;
-    color: #08d;
+    margin: 30px;
+    padding: 20px 20px 20px 70px;
+    background-color: #333;
+    border-radius: 12px;
+    color: #ccc;
+    background-image: url(../images/open-quote.png);
+    background-repeat: no-repeat;
 }
 
 a[href] {
     color: #08d;
-}
-
-a[href]:visited {
-    color: #333;
 }
 
 /* Comments */
@@ -91,12 +114,10 @@ a[href]:visited {
     padding: 20px 10px;
     margin: 0;
     font-size: 13px;
-    text-align: right;
-    border-left: 1px solid #ddd;
 }
 
 #sidebar a {
-    color: #333;
+    color: #bbb;
 }
 
 #sidebar a:hover {
@@ -136,9 +157,8 @@ a[href]:visited {
     font-weight: bold;
 }
 
-/* Gist formatting */
- .gist {
-     font-size: 13px;
+img.framed {
+    border-color: #666;
 }
 
 #footer {
@@ -150,7 +170,6 @@ a[href]:visited {
         width: 480px;
         margin: 0;
         padding: 0;
-        background-color: #fff;
         background-image: none;
     }
     

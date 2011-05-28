@@ -43,7 +43,7 @@ You may now find that the symbolicator has a similar problem with apps installed
 the iPhone simulator itself. Adding **~/Library/Application Support/iPhone Simulator/** to
 Spotlight's ignore list nails that one.
 
-<img class="framed" title="Spotlight settings" src="/images/blog/spotlight-symbolicator.png" alt="" />
+<img title="Spotlight settings" src="/images/blog/spotlight-symbolicator.png" alt="" />
 
 Now when I run the symbolicator at the command line, I get properly symbolicated 
 output, just as expected.

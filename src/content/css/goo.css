@@ -4,6 +4,17 @@ body {
     width: 840px;
 }
 
+#main {
+    padding: 0;
+    margin: 20px 0 30px 0;
+    background-color: white;
+    position: relative;
+    -moz-box-shadow:    0 4px 8px #333;
+    -webkit-box-shadow: 0 4px 8px #333;
+    box-shadow:         0 4px 8px #333;
+}
+
+
 /* Header
 ----------------------------------------*/
 

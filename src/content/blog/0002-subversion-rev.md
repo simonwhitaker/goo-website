@@ -20,7 +20,23 @@ To use:
 
 5. Build your app
 
-<script src="http://gist.github.com/506429.js?file=gistfile1.sh"></script>
+Here's the code:
+
+    # Get location of unparsed Info.plist
+    GS_INFO_PLIST_INPUT=$(basename "$INFOPLIST_FILE" .plist)
+
+    # Get location of parsed Info.plist
+    GS_INFO_PLIST_PATH="$BUILT_PRODUCTS_DIR/$FULL_PRODUCT_NAME/Info"
+
+    # Get version number from unparsed Info.plist
+    GS_VERSION=$(defaults read "$PROJECT_DIR/$GS_INFO_PLIST_INPUT" CFBundleVersion)
+
+    # Append local SVN revision number
+    export GS_NEW_VERSION=$GS_VERSION.$(svnversion)
+    echo Version is $GS_NEW_VERSION
+
+    # Write new version number to parsed Info.plist
+    defaults write "$GS_INFO_PLIST_PATH" CFBundleVersion $GS_NEW_VERSION
 
 This is a bit of a dirty one, but it works for me. If you have suggested improvements I'm all ears so please
 leave a comment.
