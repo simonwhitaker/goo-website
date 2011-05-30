@@ -27,6 +27,9 @@
                     Thoughts on developing fantastic apps for iPhone, iPad and Android
                 </div>
             </div>
+            
+            <!-- Sidebar -->
+            <% if @item[:created_at] %>
             <div id="sidebar">
                 <div class="subscribe">
                     <a href="/blog.xml">Subscribe</a>
@@ -47,14 +50,22 @@
                     </ul>
                 </div>
             </div>
+            <% end %>
+            
+            <!-- Main bit -->
             <div id="content">
                 <h1><%= @item[:title] %></h1>
+                <% if @item[:created_at] %>
                 <div class="meta">
                     Posted <%= @item[:created_at] %> by <%= @item[:author_name] or @config[:author_name] %>
                 </div>
+                <% end %>
                 <div class="blog-content">
                     <%= yield %>
                 </div>
+                
+                <!-- Previous / next nav -->
+                <% if @item[:created_at] %>
                 <div class="blog-nav">
                     <% index = sorted_articles.index(@item).to_i %>
                     
@@ -69,8 +80,10 @@
                         <a href="<%= sorted_articles[index-1].path %>"><%= sorted_articles[index-1][:title]%></a> &rarr;
                     </span>
                     <% end %>
-                    
                 </div>
+                <% end %>
+                
+                <% if @item[:created_at] %>
                 <div class="comments">
                     <h2>Comments</h2>
                     <div id="disqus_thread"></div>
@@ -87,6 +100,7 @@
                     <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript=goosoftware">comments powered by Disqus.</a></noscript>
                     <a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
                 </div>
+                <% end %>
             </div><!-- #content -->
             <div style="clear:both"> </div>
         </div><!-- #main -->
