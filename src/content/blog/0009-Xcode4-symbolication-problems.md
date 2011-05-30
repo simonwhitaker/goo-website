@@ -48,4 +48,8 @@ Spotlight's ignore list nails that one.
 Now when I run the symbolicator at the command line, I get properly symbolicated 
 output, just as expected.
 
-[so1]: http://stackoverflow.com/questions/5458573/xcode-4-failure-to-symbolicate-crash-log/5491334#5491334
+**UPDATE**: See the comments on [this Stack Overflow answer][so2] of mine. This solution
+is not without its gotchas; it can interfere with correct running of the Instruments app.
+
+[so1]: http://stackoverflow.com/questions/5458573/xcode-4-failure-to-symbolicate-crash-log/5491334
+[so2]: http://stackoverflow.com/questions/5458573/xcode-4-failure-to-symbolicate-crash-log/5491334#5491334
