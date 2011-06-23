@@ -80,6 +80,18 @@ h1 {
     line-height: 1.1em;
 }
 
+h2 {
+    color: #fff;
+    font-size: 28px;
+    font-weight: normal;
+}
+
+h3 {
+    color: #fff;
+    font-size: 20px;
+    font-weight: normal;
+}
+
 .meta {
     color: #666;
     font-style: italic;
