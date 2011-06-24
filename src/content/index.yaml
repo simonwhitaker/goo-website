@@ -4,6 +4,21 @@ js_imports:
     - showcase.js
 
 apps:
+ -  name: iBreastCheck
+    slogan: Helping you to be breast aware
+    slogan_colour: "#C70064"
+    itunes_url: http://itunes.apple.com/gb/app/ibreastcheck/id391746205?mt=8
+    image: /images/apps/ibreastcheck.png
+    description:
+        - > <b>Winner, Charity and Voluntary Sector</b><br/>NMA Awards 2011
+        - > iBreastCheck from breast cancer charity Breakthrough helps 
+            you to be breast aware with a little TLC: Touch, Look, Check.
+        - > The app has video and slideshow content explaining how to 
+            check your breasts, a reminder service to help you to remember 
+            to check regularly, and more.
+    client: <a href="http://www.torchbox.com/">Torchbox Ltd</a>
+    platform: iPhone and iPod Touch
+
  -  name: Lucky Voice
     slogan: Sing your heart out!
     slogan_colour: "#FE01B4"
@@ -59,20 +74,6 @@ apps:
         -   (Check out the RSAnimate category - they're <em>really</em> great!)
     client: <a href="http://www.torchbox.com/">Torchbox Ltd</a>
     platform: "iPhone, iPod Touch, Android"
-
- -  name: iBreastCheck
-    slogan: Helping you to be breast aware
-    slogan_colour: "#C70064"
-    itunes_url: http://itunes.apple.com/gb/app/ibreastcheck/id391746205?mt=8
-    image: /images/apps/ibreastcheck.png
-    description:
-        - > iBreastCheck from breast cancer charity Breakthrough helps 
-            you to be breast aware with a little TLC: Touch, Look, Check.
-        - > The app has video and slideshow content explaining how to 
-            check your breasts, a reminder service to help you to remember 
-            to check regularly, and more.
-    client: <a href="http://www.torchbox.com/">Torchbox Ltd</a>
-    platform: iPhone and iPod Touch
 
  -  name: Exam Countdown
     slogan: Track your exams the fun way
