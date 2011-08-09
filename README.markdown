@@ -9,6 +9,9 @@ It uses [Nanoc](http://nanoc.stoneship.org/) to build the static site contents -
     gem install mime-types
     gem install kramdown
     gem install builder
+    gem install rake
+    gem install bundler
+    
 
 # Compiling the site
 
