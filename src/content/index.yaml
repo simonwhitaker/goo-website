@@ -4,6 +4,20 @@ js_imports:
     - showcase.js
 
 apps:
+ -  name: "Oxford University: The Official Guide"
+    slogan: Discover the wonders of Oxford
+    slogan_colour: "#479d26"
+    itunes_url: http://itunes.apple.com/gb/app/oxford-university-the-official/id453006222?mt=8
+    image: /images/apps/oxford-university.png
+    description:
+        - > Oxford University's first official iPhone app takes you on 
+            a guided tour of this beautiful city and its world-famous
+            university.
+        - > Discover Oxford through the eyes of those who know it best,
+            including Harry Potter!
+    client: <a href="http://www.ox.ac.uk/">The University of Oxford</a>
+    platform: iPhone and iPod Touch
+
  -  name: iBreastCheck
     slogan: Helping you to be breast aware
     slogan_colour: "#C70064"
