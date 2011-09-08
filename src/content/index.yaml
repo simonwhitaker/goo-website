@@ -5,6 +5,7 @@ js_imports:
 
 apps:
  -  name: "Oxford University: The Official Guide"
+    slug: oxford
     slogan: Discover the wonders of Oxford
     slogan_colour: "#479d26"
     itunes_url: http://itunes.apple.com/gb/app/oxford-university-the-official/id453006222?mt=8
@@ -13,12 +14,13 @@ apps:
         - > Oxford University's first official iPhone app takes you on 
             a guided tour of this beautiful city and its world-famous
             university.
-        - > Discover Oxford through the eyes of those who know it best,
+        - > Discover Oxford through the eyes of those who know it best, 
             including Harry Potter!
     client: <a href="http://www.ox.ac.uk/">The University of Oxford</a>
     platform: iPhone and iPod Touch
 
  -  name: iBreastCheck
+    slug: ibreastcheck
     slogan: Helping you to be breast aware
     slogan_colour: "#C70064"
     itunes_url: http://itunes.apple.com/gb/app/ibreastcheck/id391746205?mt=8
@@ -34,6 +36,7 @@ apps:
     platform: iPhone and iPod Touch
 
  -  name: Lucky Voice
+    slug: luckyvoice
     slogan: Sing your heart out!
     slogan_colour: "#FE01B4"
     itunes_url: http://itunes.apple.com/gb/app/lucky-voice-karaoke/id428963272?mt=8
@@ -44,21 +47,9 @@ apps:
     client: Lucky Voice Ltd
     platform: iPad
     class: ipad
- 
- -  name: BBC Bitesize Exam Alert
-    slogan: Track your exams the fun way
-    slogan_colour: "#39f"
-    itunes_url: http://itunes.apple.com/gb/app/gcse-bitesize-exam-alert/id414023535?mt=8
-    image: /images/apps/bbc-bitesize.png
-    description:
-        - > Our popular Exam Countdown app, re-branded 
-            for the BBC Bitesize iPhone app series.
-        - > Track your forthcoming exams, get study tips 
-            and share with your friends via Facebook
-    client: BBC Bitesize / Pearson Education Ltd
-    platform: iPhone and iPod Touch
-    
+     
  -  name: The xx
+    slug: xx
     slogan: Innovative video experience
     slogan_colour: "#4e6072"
     itunes_url: http://itunes.apple.com/gb/app/the-xx/id394653020?mt=8
@@ -75,6 +66,7 @@ apps:
     platform: iPhone and iPod Touch
 
  -  name: RSA Vision
+    slug: rsavision
     slogan: Enlightenment to go
     slogan_colour: "#CE5B02"
     itunes_url: http://itunes.apple.com/gb/app/rsa-vision/id397348011?mt=8
@@ -88,27 +80,4 @@ apps:
         -   (Check out the RSAnimate category - they're <em>really</em> great!)
     client: <a href="http://www.torchbox.com/">Torchbox Ltd</a>
     platform: "iPhone, iPod Touch, Android"
-
- -  name: Exam Countdown
-    slogan: Track your exams the fun way
-    slogan_colour: "#888"
-    itunes_url: http://itunes.apple.com/gb/app/exam-countdown/id372962356?mt=8
-    image: /images/apps/exam-countdown.png
-    description: 
-        - > The Exam Countdown app allows students to keep track of 
-            forthcoming exams and share their thoughts via Facebook.
-    client: Pearson Education Ltd
-    platform: iPhone and iPod Touch
-
- -  name: Sports Massager
-    itunes_url: http://itunes.apple.com/gb/app/sports-massager/id352993865?mt=8
-    slogan: Let your phone take the strain
-    slogan_colour: "#3956BD"
-    image: /images/apps/sports-massager.png
-    description:
-        - > Aching after a great workout? Let Dan The Man take the strain! 
-            Just hit the button then enjoy a relaxing massage from Dan The 
-            Man in this fun app - Goo's first foray onto the App Store.
-    platform: iPhone
-
 

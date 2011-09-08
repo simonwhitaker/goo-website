@@ -1,7 +1,7 @@
 @import url('base.css');
 
 body {
-    width: 840px;
+    max-width: 960px;
 }
 
 #main {
@@ -79,33 +79,45 @@ body {
 
 #showcase {
     margin: 0;
-    background-color: black;
-    background-image: url('../images/app-bg.png');
     background-repeat: no-repeat;
-    color: #ddd;
+    color: #222;
     position: relative;
     width: 100%;
 }
 
 #apps {
-    border-left: 1px solid #666;
     position: relative;
-    margin: 0;
-    width: 689px;
+    margin: 0 auto;
+    width: 800px;
     height: 500px;
 }
 
 #showcase .detail {
-    color: #aaa;
+    color: #222 ;
     font-size: 13px;
 }
 
 #showcase a {
-    color: #fff;
+    color: #555;
 }
 
 .app-end {
     clear: left;
+}
+
+#showcase .page-control {
+    position: absolute;
+    top: 0;
+    z-index: 1000;
+    display: none;
+}
+
+#showcase #prev {
+    left: 10px;
+}
+
+#showcase #next {
+    right: 10px;
 }
 
 #showcase .app {
@@ -120,7 +132,7 @@ body {
 
 #showcase .app h2 a {
     text-decoration: none;
-    color: #eee;
+    color: #222;
 }
 
 #showcase .app h2 a:hover {
@@ -128,9 +140,9 @@ body {
 }
 
 #showcase .app h2 .appslogan {
-    color: #09f;
+    color: #09f !important;
     font-weight: normal;
-    margin-left: 6px;
+    margin-left: 2px;
 }
 
 #showcase .app .screenshot {
@@ -366,7 +378,6 @@ ul.blog-items {
     
     #showcase {
         width: 440px;
-        background-color: black;
         border-radius: 0;
         -moz-border-radius: 0;
         padding: 0 20px;

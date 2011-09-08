@@ -8,21 +8,73 @@ function scroll_to_page(page, animate) {
     var attr = {'scrollLeft': page_width * page};
     // Do the scrolling
     if (animate) {
-        $('#apps').animate(attr, 300);
+        $('#apps').animate(attr, 300, function(){
+            // animation complete
+            update_paging_controls();
+        });
     } else {
         $('#apps').attr(attr);
+        update_paging_controls();
     }
     $('.pager').each(function(index){
         $(this).toggleClass('selected', index == page);
     });
 }
 
-$(function () {
+function update_paging_controls() {
+    var current_page = get_current_page();
+    var last_page = $('.app').length - 1;
+    var OPACITY_FADED = 0.3;
+    var OPACITY_STD = 1.0;
+    
+    var target_opacity_prev = current_page == 0 ? OPACITY_FADED : OPACITY_STD;
+    var target_opacity_next = current_page == last_page ? OPACITY_FADED : OPACITY_STD;
+
+    if (Math.abs($('.page-control#prev img').css('opacity') - target_opacity_prev) > 0.5) {
+        $('.page-control#prev img').animate({'opacity': target_opacity_prev}, 150);
+    }
+    if (Math.abs($('.page-control#next img').css('opacity') - target_opacity_next) > 0.5) {
+        $('.page-control#next img').animate({'opacity': target_opacity_next}, 150);
+    }
+    
+    if (current_page > 0) {
+        prev_app_id = $('.app').get(current_page - 1).id;
+        $('.page-control#prev a').attr('href', '#!' + prev_app_id);
+    } else {
+        $('.page-control#prev a').attr('href', '');
+    }
+
+    if (current_page < last_page) {
+        next_app_id = $('.app').get(current_page + 1).id;
+        $('.page-control#next a').attr('href', '#!' + next_app_id);
+    } else {
+        $('.page-control#next a').attr('href', '');
+    }
+}
+
+function prev_page() {
+    var current_page = get_current_page();
+
+    if (current_page == 0)
+        return
+    scroll_to_page(current_page - 1, true);
+}
+
+function next_page() {
+    var current_page = get_current_page();
+    var last_page = $('.app').length - 1;
+    
+    if (current_page == last_page)
+        return
+    scroll_to_page(current_page + 1, true);
+}
+
+$(document).ready(function () {
     var w = $('#apps').width();
     
     // don't run on the iPhone
     if (w > 480) {
-        var page_control = $('<div></div>').attr('id','page_control');
+        // First, layout the apps
         var PADDING = 30;
         $('.app').each(function(index) {
             $(this).css({
@@ -32,13 +84,13 @@ $(function () {
                 'width':    (w - PADDING * 2)  + 'px',
                 'padding':  PADDING + 'px',
             });
-            var pager = $('<a></a>').attr('class','pager');
-            pager.attr('href','#!' + $(this).attr('id')).html($('h2 a', $(this)).html());
-            pager.click(function(){ scroll_to_page(index, true); });
-            page_control.append(pager);
         });
         $('#apps').css('overflow','hidden');
-        $('#showcase').prepend(page_control);
+        
+        // Now make the page-control buttons visible
+        $('.page-control#next').click(function(){ next_page(); });
+        $('.page-control#prev').click(function(el){ prev_page(); });
+        $('.page-control').show();
     }
     if (r = location.href.match('#!(.+)')) {
         var app = $('#' + r[1]);
