@@ -41,14 +41,14 @@ function update_paging_controls() {
         prev_app_id = $('.app').get(current_page - 1).id;
         $('.page-control#prev a').attr('href', '#!' + prev_app_id);
     } else {
-        $('.page-control#prev a').attr('href', '');
+        $('.page-control#prev a').attr('href', 'javascript:void(0);');
     }
 
     if (current_page < last_page) {
         next_app_id = $('.app').get(current_page + 1).id;
         $('.page-control#next a').attr('href', '#!' + next_app_id);
     } else {
-        $('.page-control#next a').attr('href', '');
+        $('.page-control#next a').attr('href', 'javascript:void(0);');
     }
 }
 

@@ -143,6 +143,7 @@ body {
     color: #09f !important;
     font-weight: normal;
     margin-left: 2px;
+    display: block;
 }
 
 #showcase .app .screenshot {
