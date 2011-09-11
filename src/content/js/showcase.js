@@ -72,26 +72,30 @@ function next_page() {
 $(document).ready(function () {
     var w = $('#apps').width();
     
-    // don't run on the iPhone
-    if (w > 480) {
-        // First, layout the apps
-        var PADDING = 30;
-        $('.app').each(function(index) {
-            $(this).css({
-                'position': 'absolute',
-                'top':      0,
-                'left':     (w * index)  + 'px',
-                'width':    (w - PADDING * 2)  + 'px',
-                'padding':  PADDING + 'px',
-            });
-        });
-        $('#apps').css('overflow','hidden');
-        
-        // Now make the page-control buttons visible
-        $('.page-control#next').click(function(){ next_page(); });
-        $('.page-control#prev').click(function(el){ prev_page(); });
-        $('.page-control').show();
+    // don't run on the iPhone or iPod Touch
+    if((navigator.userAgent.match(/iPhone/i)) || (navigator.userAgent.match(/iPod/i))) {
+        return;
     }
+    
+    // First, layout the apps
+    var PADDING = 30;
+    $('.app').each(function(index) {
+        $(this).css({
+            'position': 'absolute',
+            'top':      0,
+            'left':     (w * index)  + 'px',
+            'width':    (w - PADDING * 2)  + 'px',
+            'padding':  PADDING + 'px',
+        });
+    });
+    $('#apps').css('overflow','hidden');
+    
+    // Now make the page-control buttons visible
+    $('.page-control#next').click(function(){ next_page(); });
+    $('.page-control#prev').click(function(el){ prev_page(); });
+    $('.page-control').show();
+
+    // Handle #! URLs
     if (r = location.href.match('#!(.+)')) {
         var app = $('#' + r[1]);
         var index = $('.app').index(app);

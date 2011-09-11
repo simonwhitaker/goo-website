@@ -1,12 +1,12 @@
 @import url('base.css');
 
 body {
-    max-width: 960px;
+    max-width: 980px;
 }
 
 #main {
     padding: 0;
-    margin: 20px 0 30px 0;
+    margin: 0 0 30px 0;
     background-color: white;
     position: relative;
     -moz-box-shadow:    0 4px 8px #333;
@@ -264,140 +264,14 @@ ul.blog-items {
     color: #999;
     font-size: 12px;
 }
-
 @media screen and (max-device-width: 480px) {
-    body {
-        width: 480px;
-        margin: 0;
-        padding: 0;
-        background-color: #fff;
-        background-image: none;
-    }
-    
-    p, div, span, li {
-        font-size: 20px;
-    }
-    
-    h1 {
-        font-size: 28px;
-        font-weight: normal;
-    }
-
-    h2 {
-        font-size: 24px;
-    }
-
-    h3 {
-        font-size: 20px;
-    }
-    
-    #header {
-        height: 160px;
-    }
-
     #main {
-        margin: 0;
         padding: 0;
-        background-image: none;
-        -moz-box-shadow:    none;
-        -webkit-box-shadow: none;
-        box-shadow:         none;
-        
-    }
-
-    #logo {
-        left: 10px;
-        top: 20px;
-    }
-
-    #slogan {
-        left: 120px;
-        width: 340px;
-        top: 120px;
-    }
-    #nav {
+        margin: 0;
+        background-color: white;
         position: relative;
-        top: 0;
-        left: 0;
-        padding: 0;
-        margin: 10px 0;
+        -moz-box-shadow:    0 0 0 #333;
+        -webkit-box-shadow: 0 0 0 #333;
+        box-shadow:         0 0 0 #333;
     }
-    
-    #nav .tabs {
-        text-align: left;
-        padding: 0;
-        margin: 0 20px;
-    }
-    
-    #nav .tabs li {
-        float: left;
-        font-size: 20px;
-    }
-
-    #nav .tabs li+li {
-        margin-left: 1px;
-    }
-
-    #content {
-        clear: both;
-        padding: 0 20px;
-        margin: 60px 0 0 0;
-        width: 440px;
-    }
-    
-    #showcase {
-        width: 440px;
-        border-radius: 0;
-        -moz-border-radius: 0;
-        padding: 0 20px;
-        margin: 20px 0 0 0;
-    }
-    
-    #showcase #apps {
-        width: 100%;
-        border-width: 0;
-        height: auto;
-    }
-    
-    #showcase .app h2 a {
-    }
-
-    #showcase .app+.app {
-        border-top: 1px solid #333;
-    }
-
-    #showcase .app {
-        margin: 0;
-        padding: 30px 0px;
-    }
-
-    #showcase .app img.screenshot {
-        width: 120px;
-    }
-
-    #showcase .app.ipad .description,
-    #showcase .app .description {
-        margin-left: 140px;
-        padding: 0px;
-    }
-    
-    #footer {
-        margin: 0;
-        padding: 20px 10px;
-        text-align: center;
-        font-size: 10px;
-    }
-
-    #footer a {
-    }   
-    
-    .portrait {
-        float: left;
-        width: 60px;
-    }
-
-    .biog {
-        margin-left: 80px;
-    }
-    
 }
