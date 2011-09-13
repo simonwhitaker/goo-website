@@ -43,8 +43,8 @@ apps:
     image: /images/apps/lucky-voice.png
     description:
         - > The ultimate karaoke experience for your iPad!
-        - > Sing along to over 7,500 songs with this fun iPad
-            app from Lucky Voice, the UK's number one online
+        - > Sing along to over 7,500 songs with this fun iPad 
+            app from Lucky Voice, the UK's number one online 
             karaoke service.
         - > <a href="http://www.ikmultimedia.com/irigmic/features/">iRig Mic</a> 
             support means you don't have to use your hairbrush!
