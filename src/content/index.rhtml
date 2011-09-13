@@ -16,10 +16,8 @@
                 <img src="<%= app[:image] %>" class="screenshot" alt="app screenshot" border="0">
             </a>
             <div class="description">
-                <h2>
-                    <a href="<%= app[:itunes_url] %>"><%= app[:name] %></a>
-                    <span class="appslogan"><%= app[:slogan]%></span>
-                </h2>
+                <h2><a href="<%= app[:itunes_url] %>"><%= app[:name] %></a></h2>
+                <h3 class="appslogan"><%= app[:slogan]%></h3>
                 <% for desc in app[:description]%>
                 <p><%= desc %></p>
                 <% end %>

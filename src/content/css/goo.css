@@ -31,10 +31,9 @@ body {
 
 #slogan {
     position: absolute;
-    font-size: 17px;
+    font-size: 24px;
     left: 130px;
     top: 140px;
-    font-family: "Century Gothic", "Helevica Neue", Arial, Helvetica, sans-serif;
     color: #09f;
 }
 
@@ -83,7 +82,6 @@ body {
 #showcase {
     margin: 0;
     background-repeat: no-repeat;
-    color: #222;
     position: relative;
     width: 100%;
 }
@@ -96,7 +94,6 @@ body {
 }
 
 #showcase .detail {
-    color: #222 ;
     font-size: 13px;
 }
 
@@ -123,10 +120,10 @@ body {
     padding: 30px;
 }
 
-#showcase .app h2 {
-    margin-top: 0;
-    font-size: 22px;
-    font-weight: bold;
+#showcase .app h2, #showcase .app h3 {
+    font-size: 24px;
+    font-weight: normal;
+    margin: 0 0 12px 0;
 }
 
 #showcase .app h2 a {
@@ -138,10 +135,8 @@ body {
     text-decoration: underline;
 }
 
-#showcase .app h2 .appslogan {
-    color: #09f !important;
-    font-weight: normal;
-    display: block;
+#showcase .app h3.appslogan {
+    color: #09f;
 }
 
 #showcase .app .screenshot {
@@ -172,7 +167,6 @@ body {
 #showcase .app .quotation .source {
     font-style: normal;
     font-weight: normal;
-    color: #666;
     margin-left: 5px;
 }
 
