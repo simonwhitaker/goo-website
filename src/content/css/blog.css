@@ -1,7 +1,7 @@
 @import url('base.css');
 
 body {
-    background-color: #000;
+    background-color: #eee;
     max-width: 1200px;
 }
 
@@ -10,9 +10,9 @@ body {
 }
 
 #content {
-    background-color: #000;
+/*    background-color: #000;*/
     margin-right: 220px;
-    color: #999;
+    color: #333;
 }
 
 #slogan {
@@ -25,34 +25,14 @@ body {
 pre, code {
     font-family: 'Bitstream Vera Sans Mono', Courier, monospace;
     font-size: 14px;
-    color: #fff;
+/*    color: #eee;*/
 }
 
-pre {
-    margin: 30px;
+pre, blockquote {
+    margin: 0;
     padding: 12px;
-    background-color: #333;
-    border-radius: 12px;
-}
-
-/* Monochrome nav */
-
-#nav {
-    top: 20px;
-}
-
-#nav .tabs li a {
-    background-color: #aaa;
-    color: white;
-}
-
-#nav .tabs li a:hover {
-    background-color: #555;
-    color: white;
-}
-
-#nav .tabs li a.selected {
-    background-color: #08d;
+    background-color: #ddd;
+    border-radius: 5px;
 }
 
 /* Blog article navigation */
@@ -66,12 +46,6 @@ pre {
     margin: 0;
 }
 
-.blog-nav .nav+.nav {
-    border-left: 1px dotted #444;
-    padding-left: 10px;
-    margin-left: 10px;
-}
-
 /* Misc blog formatting */
 
 h1 {
@@ -81,28 +55,24 @@ h1 {
 }
 
 h2 {
-    color: #fff;
+    color: #333;
     font-size: 28px;
     font-weight: normal;
 }
 
 h3 {
-    color: #fff;
+    color: #333;
     font-size: 20px;
     font-weight: normal;
 }
 
 .meta {
-    color: #666;
+/*    color: #666;*/
     font-style: italic;
 }
 
 blockquote {
-    margin: 30px;
     padding: 20px 20px 20px 70px;
-    background-color: #333;
-    border-radius: 12px;
-    color: #ccc;
     background-image: url(../images/open-quote.png);
     background-repeat: no-repeat;
 }
@@ -129,7 +99,7 @@ a[href] {
 }
 
 #sidebar a {
-    color: #bbb;
+    color: #666;
 }
 
 #sidebar a:hover {
@@ -144,7 +114,7 @@ a[href] {
 }
 
 #sidebar h2 {
-    color: #999;
+    color: #444;
     font-size: 20px;
     text-transform: uppercase;
     padding: 0;
