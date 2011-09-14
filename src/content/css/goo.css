@@ -90,7 +90,6 @@ body {
     position: relative;
     margin: 0 auto;
     width: 800px;
-    height: 500px;
 }
 
 #showcase .detail {
@@ -98,7 +97,7 @@ body {
 }
 
 .app-end {
-    clear: left;
+    clear: both;
 }
 
 #showcase .page-control {

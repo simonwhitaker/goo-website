@@ -76,7 +76,9 @@ $(document).ready(function () {
     if((navigator.userAgent.match(/iPhone/i)) || (navigator.userAgent.match(/iPod/i))) {
         return;
     }
-    
+
+    $('#apps').css('height', 500);
+
     // First, layout the apps
     var PADDING = 30;
     $('.app').each(function(index) {

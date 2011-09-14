@@ -37,6 +37,10 @@
                     </div>
                     <% end %>
                 </div>
+                <% if app[:android_package] %>
+                <div style="clear: right"> </div>
+                <% end %>
+                
                 
                 <% if app[:client] %>
                 <div class="detail">Client: <%= app[:client] %></div>
@@ -45,8 +49,7 @@
                 <div class="detail">Platform: <%= app[:platform] %></div>
                 <% end %>
             </div>
-            <div style="clear:right"> </div>
-            <div class="app-end"></div>
+            <div class="app-end"> </div>
         </div>
         <% end %>
                 
