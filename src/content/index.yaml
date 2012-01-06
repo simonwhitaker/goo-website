@@ -30,7 +30,7 @@ apps:
     itunes_url: http://itunes.apple.com/gb/app/ibreastcheck/id391746205?mt=8
     image: /images/apps/ibreastcheck.png
     accolades:
-        - > Winner, Charity and Voluntary Sector<br>NMA Awards 2011
+        - > Winner, Charity and Voluntary Sector<br><a href="http://www.nmaawards.co.uk/winners2011.aspx">NMA Awards 2011</a>
     description:
         - > iBreastCheck from breast cancer charity Breakthrough helps 
             you to be breast aware with a little TLC: Touch, Look, Check.
