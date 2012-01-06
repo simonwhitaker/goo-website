@@ -76,6 +76,20 @@ body {
     background-color: #08d;
 }
 
+/* Accolades
+----------------------------------------*/
+
+#accolades {
+	margin: 20px 0;
+}
+
+#accolades .accolade {
+	background: url('/images/accolade-star.png') no-repeat left center;
+	padding: 0 0 0 60px;
+	min-height: 48px;
+	font-weight: bold;
+}
+
 /* App showcase
 ----------------------------------------*/
 

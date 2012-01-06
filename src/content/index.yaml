@@ -10,8 +10,11 @@ apps:
     slogan_colour: "#479d26"
     itunes_url: http://itunes.apple.com/gb/app/oxford-university-the-official/id453006222?mt=8
     image: /images/apps/oxford-university.png
+    accolades:
+        - > Named by Apple as one of the 
+            <a href="http://itunes.apple.com/WebObjects/MZStore.woa/wa/viewFeature?id=480282506">best 
+            apps of 2011</a> in the UK App Store
     description:
-        - > <b>Chosen by Apple as one of the <a href="http://itunes.apple.com/WebObjects/MZStore.woa/wa/viewFeature?id=480282506">best apps of 2011</a> in the UK App Store!</b>
         - > Oxford University's first official iPhone app takes you on 
             a guided tour of this beautiful city and its world-famous
             university.
@@ -26,8 +29,9 @@ apps:
     slogan_colour: "#C70064"
     itunes_url: http://itunes.apple.com/gb/app/ibreastcheck/id391746205?mt=8
     image: /images/apps/ibreastcheck.png
+    accolades:
+        - > Winner, Charity and Voluntary Sector<br>NMA Awards 2011
     description:
-        - > <b>Winner, Charity and Voluntary Sector</b><br/>NMA Awards 2011
         - > iBreastCheck from breast cancer charity Breakthrough helps 
             you to be breast aware with a little TLC: Touch, Look, Check.
         - > The app has video and slideshow content explaining how to 

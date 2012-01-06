@@ -18,8 +18,15 @@
             <div class="description">
                 <h2><a href="<%= app[:itunes_url] %>"><%= app[:name] %></a></h2>
                 <h3 class="appslogan"><%= app[:slogan]%></h3>
-                <% for desc in app[:description]%>
-                <p><%= desc %></p>
+                <% if app[:accolades] %>
+                <div id="accolades">
+                    <% for accolade in app[:accolades] %>
+                    <div class="accolade"><%= accolade %></div>
+                    <% end %>
+                </div>
+                <% end %>
+                <% for para in app[:description] %>
+                <p><%= para %></p>
                 <% end %>
 
                 <div class="install-links">
