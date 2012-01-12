@@ -67,6 +67,10 @@
                 <div class="blog-content">
                     <%= yield %>
                 </div>
+
+                <div class="twitter">
+                    <p>To comment on this post, drop me a line <a href="http://twitter.com/s1mn/">on Twitter</a>.</p>
+                </div>
                 
                 <!-- Previous / next nav -->
                 <% if @item[:created_at] %>
@@ -84,25 +88,6 @@
                         <a href="<%= sorted_articles[index-1].path %>"><%= sorted_articles[index-1][:title]%></a> &rarr;
                     </span>
                     <% end %>
-                </div>
-                <% end %>
-                
-                <% if @item[:created_at] %>
-                <div class="comments">
-                    <h2>Comments</h2>
-                    <div id="disqus_thread"></div>
-                    <script type="text/javascript">
-                      /**
-                        * var disqus_identifier; [Optional but recommended: Define a unique identifier (e.g. post id or slug) for this thread] 
-                        */
-                      (function() {
-                       var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-                       dsq.src = 'http://goosoftware.disqus.com/embed.js';
-                       (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-                      })();
-                    </script>
-                    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript=goosoftware">comments powered by Disqus.</a></noscript>
-                    <a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
                 </div>
                 <% end %>
             </div><!-- #content -->

@@ -71,6 +71,11 @@ h3 {
     font-style: italic;
 }
 
+.twitter {
+	font-style: italic;
+	color: #666;
+}
+
 blockquote {
     padding: 20px 20px 20px 70px;
     background-image: url(../images/open-quote.png);
