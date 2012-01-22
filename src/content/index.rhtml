@@ -30,25 +30,18 @@
                 <% end %>
 
                 <div class="install-links">
-                    <% if app[:android_package] %>
-                    <div class="android-info">
-                        <img src="/images/available-for-android.png" width="129" height="45" alt="Available for Android">
-                        <br>
-                        To install on Android, search the marketplace for <%= app[:name] %> or scan 
-                        <a href="http://chart.apis.google.com/chart?cht=qr&amp;chs=400x400&amp;chld=Q%7C3&amp;chl=market://details?id=<%= app[:android_package] %>">this QR code</a>
-                    </div>
-                    <% end %>
                     <% if app[:itunes_url] %>
                     <div class="appstore-badge">
                         <a href="<%= app[:itunes_url] %>"><img src="/images/app-store-badge-clipped.png" width="130" height="45" alt="Available on the App Store" border="0"></a>
                     </div>
                     <% end %>
+                    <% if app[:android_package] %>
+                    <div class="android-badge">
+                        <a href="https://market.android.com/details?id=<%= app[:android_package] %>"><img src="/images/available-for-android.png" width="129" height="45" alt="Available for Android" border="0"></a>
+                    </div>
+                    <% end %>
                 </div>
-                <% if app[:android_package] %>
-                <div style="clear: right"> </div>
-                <% end %>
-                
-                
+                                
                 <% if app[:client] %>
                 <div class="detail">Client: <%= app[:client] %></div>
                 <% end %>

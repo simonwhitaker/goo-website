@@ -185,22 +185,15 @@ body {
 
 #showcase .app .install-links {
     margin: 0 0 10px 0;
+	height: 50px;
 }
 
-#showcase .app .appstore-badge {
-    padding: 0;
+#showcase .app .appstore-badge,
+#showcase .app .android-badge {
+    padding: 0 10px 0 0;
+	float: left;
 }
 
-#showcase .app div.android-info {
-    float: right;
-    width: 220px;
-    font-size: 12px;
-    color: #666;
-}
-
-#showcase .app div.android-info a {
-    color: #666;
-}
 /* Contact page
 ----------------------------------------*/
 
