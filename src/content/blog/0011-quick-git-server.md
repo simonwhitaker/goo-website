@@ -39,7 +39,11 @@ So, here's what I had to do on my Mac mini:
 
 ## Step 1: Create the git user
 
-The steps on how to do this will vary depending on your operating system. For the sake of simplicity, on the server I just opened System Preferences > Accounts and added a new user, setting their username to git and giving them a suitably strong password. (That's not a perfect solution: it sets git up as a regular user so e.g. they appear in the login screen, but it works fine for me. If you want to create a user who doesn't appear in the login screen you can search online for how to do that.)
+The steps on how to do this will vary depending on your operating system. The git user doesn't need (indeed, shouldn't have) administrator or sudo privileges, a plain old user account will do fine.
+
+For the sake of simplicity, on the server I just opened System Preferences > Accounts and added a new user, setting their username to git and giving them a suitably strong password. 
+
+(That's not a perfect solution: it sets git up as a regular user so e.g. they appear in the login screen, but it works fine for me. If you want to create a user who doesn't appear in the login screen you can search online for how to do that.)
 
 ## Step 2: Set up passwordless SSH
 
@@ -119,3 +123,4 @@ Cooooool!
 
 There are loads of ways you could improve this process. For example, any user who uploads their public SSH key would have access to all repositories in git's home directory. You might want to change that, for example so that users can only write to their own repositories.
 
+If you find ways to improve the process, please do [let me know](http://twitter.com/s1mn/). Alternatively, the source for this page is… you guessed it… [on Github](https://github.com/simonwhitaker/goo-website/blob/develop/src/content/blog/0011-quick-git-server.md)! Feel free to clone it, tweak it and send me a push request.
