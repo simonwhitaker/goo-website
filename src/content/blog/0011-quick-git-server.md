@@ -22,7 +22,7 @@ and away I go. So, the question was, how do I create a remote on my own device a
 
 ## Unpicking the SSH notation
 
-It helps to first have an understanding of exactly what that notation Github uses actually means. It's really simple. The notation adheres to the following pattern:
+It helps to first understand what the notation Github uses actually means. It's really simple. The basic format is:
 
 	[username]@[hostname]:[path to repository]
 
@@ -123,4 +123,4 @@ Cooooool!
 
 There are loads of ways you could improve this process. For example, any user who uploads their public SSH key would have access to all repositories in git's home directory. You might want to change that, for example so that users can only write to their own repositories.
 
-If you find ways to improve the process, please do [let me know](http://twitter.com/s1mn/). Alternatively, the source for this page is… you guessed it… [on Github](https://github.com/simonwhitaker/goo-website/blob/develop/src/content/blog/0011-quick-git-server.md)! Feel free to clone it, tweak it and send me a push request.
+If you find ways to improve the process, please do [let me know](http://twitter.com/s1mn/). Alternatively, the source for this page is… you guessed it… [on Github](https://github.com/simonwhitaker/goo-website/blob/develop/src/content/blog/0011-quick-git-server.md)! Feel free to clone it, tweak it and send me a pull request.
