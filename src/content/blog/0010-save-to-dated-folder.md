@@ -14,3 +14,4 @@ useful too. It's on Github so feel free to clone, tweak and share.
 of comments and context. It's free, in every possible sense of the word.)
 
 <script src="https://gist.github.com/1722378.js"> </script>
+<noscript><a href="https://gist.github.com/1722378">https://gist.github.com/1722378</a></noscript>
