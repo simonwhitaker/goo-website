@@ -82,6 +82,10 @@
                         &larr; <a href="<%= sorted_articles[index + 1].path %>"><%= sorted_articles[index + 1][:title]%></a>
                     </span>
                     <% end %>
+                    
+                    <% if @item != sorted_articles.first && @item != sorted_articles.last then %>
+                    <span class="nav"> ... </span>
+                    <% end %>
 
                     <% if @item != sorted_articles.first then %>
                     <span class="nav next">
