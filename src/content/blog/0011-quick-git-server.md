@@ -22,7 +22,7 @@ and away I go. So, the question was: how do I create a remote on my own device a
 
 ## Unpicking the SSH notation
 
-It's helpful to first understand what that notation Github uses actually means. It's really simple. The basic format is:
+It's helpful to first understand what the SSH notation actually means. It's really simple. The basic format is:
 
 	[username]@[hostname]:[path to repository]
 
