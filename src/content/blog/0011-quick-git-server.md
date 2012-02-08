@@ -1,10 +1,10 @@
 ---
 kind: article
 created_at: 2012-02-07
-title: How to run your own simple Git server
+title: Running a simple Git server using SSH
 ---
 
-I had the need recently to set up a temporary git remote on a Mac mini on my local network. It turned out to be both easy and handy so I thought I'd document how I did it.
+I had the need recently to set up a temporary git remote on a Mac mini on my local network. It turned out to be both easy and useful, so I thought I'd document how I did it.
 
 Throughout this article I'll refer to the Mac mini where I set up the remote repository as **the server**, and my Macbook Pro (my primary work computer) as **my laptop**.
 
@@ -121,4 +121,4 @@ Cooooool!
 
 There are loads of ways you could improve this process. For example, any user who uploads their public SSH key would have access to all repositories in git's home directory. You might want to change that, for example so that users can only write to their own repositories.
 
-If you find ways to improve the process, please do [let me know](http://twitter.com/s1mn/). Alternatively, the source for this page is... you guessed it... [on Github](https://github.com/simonwhitaker/goo-website/blob/develop/src/content/blog/0011-quick-git-server.md)! Feel free to clone it, tweak it and send me a pull request.
+If you find ways to improve the process, please do [let me know](http://twitter.com/s1mn/). Alternatively, the source for this page is... you guessed it... [on Github](https://github.com/simonwhitaker/goo-website/blob/master/src/content/blog/0011-quick-git-server.md)! Feel free to clone it, tweak it and send me a pull request.
