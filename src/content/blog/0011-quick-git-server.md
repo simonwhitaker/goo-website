@@ -2,6 +2,7 @@
 kind: article
 created_at: 2012-02-07
 title: Running a simple Git server using SSH
+slug: how-to-run-your-own-simple-git-server
 ---
 
 I had the need recently to set up a temporary git remote on a Mac mini on my local network. It turned out to be both easy and useful, so I thought I'd document how I did it.

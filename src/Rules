@@ -56,7 +56,8 @@ route '/htaccess/' do
 end
 
 route '/blog/*/' do
-    '/blog/' + item[:title].to_slug + '/index.html'
+    slug = item[:slug] || item[:title].to_slug
+    '/blog/' + slug + '/index.html'
 end
 
 route '*' do
