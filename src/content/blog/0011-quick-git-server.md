@@ -44,7 +44,7 @@ The steps on how to do this will vary depending on your operating system. The gi
 
 For the sake of simplicity, on the server (running OS X, remember) I just opened System Preferences > Accounts and added a new user, setting their username to git and giving them a suitably strong password. 
 
-(That's not a perfect solution: it sets git up as a regular user so e.g. they appear in the login screen, but it works fine for me. If you want to create a user who doesn't appear in the login screen you can search online for how to do that.)
+(That's not a perfect solution: it sets git up as a regular user so e.g. they appear in the login screen, but it works fine for me. If you're using OS X and you want to create a user who doesn't appear in the login screen, see [this Super User answer](http://superuser.com/a/268441/62672) for details.)
 
 ## Step 2: Set up passwordless SSH
 
