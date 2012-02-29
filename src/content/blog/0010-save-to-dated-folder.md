@@ -4,6 +4,8 @@ created_at: 2012-02-02
 title: Dated PDF Saver
 ---
 
+**Update (29/2/12): Script tweaked to make sure that it generates a unique target filename rather than overwriting existing contents in the target directory.** (See updated code below. If you've got the version with the `unique_path` function you're good to go.)
+
 Here's a nifty script I use to save emailed receipts as PDFs in a folder
 hierarchy that includes the date (year and month) on which they were saved.
 It helps keep my business receipts organised and saves me a bit of time
