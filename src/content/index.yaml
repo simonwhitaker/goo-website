@@ -4,10 +4,23 @@ js_imports:
     - showcase.js
 
 apps:
+ -  name: "Zippity"
+    slug: zippity
+    slogan: Put your zip in it
+    itunes_url: http://itunes.apple.com/gb/app/zippity/id513855390?ls=1&mt=8
+    image: /images/apps/zippity.png
+    description:
+        - > The easiest way to handle zip files on your iPhone! 
+            View contents, send individual files by email, add 
+            images to your Camera Roll, and more.
+        - > Handles .zip, .tar, .gz, .tar.gz.
+        - > See <a href="http://www.zippityapp.co.uk">www.zippityapp.co.uk</a>
+    client: Goo Software! This is one of our own.
+    platform: iPhone and iPod Touch
+
  -  name: "Oxford University: The Official Guide"
     slug: oxford
     slogan: Discover the wonders of Oxford
-    slogan_colour: "#479d26"
     itunes_url: http://itunes.apple.com/gb/app/oxford-university-the-official/id453006222?mt=8
     image: /images/apps/oxford-university.png
     accolades:
@@ -26,7 +39,6 @@ apps:
  -  name: iBreastCheck
     slug: ibreastcheck
     slogan: Helping you to be breast aware
-    slogan_colour: "#C70064"
     itunes_url: http://itunes.apple.com/gb/app/ibreastcheck/id391746205?mt=8
     image: /images/apps/ibreastcheck.png
     accolades:
@@ -43,7 +55,6 @@ apps:
  -  name: Lucky Voice
     slug: luckyvoice
     slogan: Sing your heart out!
-    slogan_colour: "#FE01B4"
     itunes_url: http://itunes.apple.com/gb/app/lucky-voice-karaoke/id428963272?mt=8
     image: /images/apps/lucky-voice.png
     description:
@@ -60,7 +71,6 @@ apps:
  -  name: The xx
     slug: xx
     slogan: Innovative video experience
-    slogan_colour: "#4e6072"
     itunes_url: http://itunes.apple.com/gb/app/the-xx/id394653020?mt=8
     image: /images/apps/the-xx.png
     description:
@@ -77,7 +87,6 @@ apps:
  -  name: RSA Vision
     slug: rsavision
     slogan: Enlightenment to go
-    slogan_colour: "#CE5B02"
     itunes_url: http://itunes.apple.com/gb/app/rsa-vision/id397348011?mt=8
     android_package: com.goocode.rsavision
     image: /images/apps/rsa-vision.png 
