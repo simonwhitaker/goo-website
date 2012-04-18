@@ -5,7 +5,7 @@ title: Calling UIDevice's -uniqueIdentifier without warnings
 slug: uniqueidentifier-no-warnings
 ---
 
-If you use the [TestFlight SDK](https://www.testflightapp.com/sdk/download/) in your iOS app you should be aware of a small but significant change in v1.0 which went live a couple of weeks ago. As [this blog post](http://blog.testflightapp.com/post/19957620625/testflight-sdk-udid-access) explains, the TestFlight SDK no longer includes a device's UDID by default in the data it reports back to the mothership. This means that, again by default, data on sessions, checkpoints etc in the TestFlight SDK console will no longer be associated to a specific tester's device. The reason for the change is that the TestFlight SDK is intended for use on both test and production builds, and Apple will now [reject apps that ask for a device's UDID](http://techcrunch.com/2012/03/24/apple-udids/).
+If you use the [TestFlight SDK](https://www.testflightapp.com/sdk/download/) in your iOS app you should be aware of a small but significant change in v1.0 which went live a couple of weeks ago. As [this blog post](http://blog.testflightapp.com/post/19957620625/testflight-sdk-udid-access) explains, the TestFlight SDK no longer includes a device's UDID by default in the data it reports back to the mothership. This means that, again by default, data on sessions, checkpoints etc in the TestFlight SDK console will no longer be associated with a specific tester's device. The reason for the change is that the TestFlight SDK is intended for use on both test and production builds, and Apple will now [reject apps that ask for a device's UDID](http://techcrunch.com/2012/03/24/apple-udids/).
 
 As a workaround, the TestFlight SDK now contains a new class method, `+setDeviceIdentifier:`, which you can use to add a device's UDID to TestFlight's callback packets in your Ad-Hoc builds by simply adding the following line to your code (I've added it right after my call to `+takeOff:`):
 
@@ -32,5 +32,6 @@ I could set Xcode to ignore that error on a per-file basis by setting `-Wno-depr
 It turns out the way to do it is with clang pragmas. Here's how:
 
 <script src="https://gist.github.com/2413961.js"> </script>
+<noscript><a href="https://gist.github.com/2413961">https://gist.github.com/2413961</a></noscript>
 
 Job done.
