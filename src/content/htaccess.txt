@@ -1,1 +1,19 @@
 ErrorDocument 404 /error/404.html
+
+Redirect 301 /blog/uniqueidentifier-no-warnings/                                                http://blog.goosoftware.co.uk/2012/04/18/unique-identifier-no-warnings/
+Redirect 301 /blog/on-zippity/                                                                  http://blog.goosoftware.co.uk/2012/04/10/developing-zippity/
+Redirect 301 /blog/ios-photo-hierarchy/                                                         http://blog.goosoftware.co.uk/2012/03/01/ios-photo-hierarchy/
+Redirect 301 /blog/xcode-git-revision/                                                          http://blog.goosoftware.co.uk/
+Redirect 301 /blog/how-to-run-your-own-simple-git-server/                                       http://blog.goosoftware.co.uk/2012/02/07/quick-git-server/
+Redirect 301 /blog/dated-pdf-saver/                                                             http://blog.goosoftware.co.uk/2012/02/02/save-to-dated-folder/
+Redirect 301 /blog/the-symbolicator-helps-those-who-help-themselves/                            http://blog.goosoftware.co.uk/2011/03/30/Xcode4-symbolication-problems/
+Redirect 301 /blog/adding-state-to-nsurlconnection/                                             http://blog.goosoftware.co.uk/
+Redirect 301 /blog/debugging-in-analogue/                                                       http://blog.goosoftware.co.uk/2010/11/08/debugging-in-analogue/
+Redirect 301 /blog/build-and-they-might-come/                                                   http://blog.goosoftware.co.uk/2010/11/05/build-and-they-might-come/
+Redirect 301 /blog/site-construction-and-blogging-with-nanoc/                                   http://blog.goosoftware.co.uk/2010/10/20/nanoc/
+Redirect 301 /blog/iphone-developer-program-resetting-your-100-device-per-year-limit/           http://blog.goosoftware.co.uk/2010/09/06/device-limit/
+Redirect 301 /blog/spot-the-bug/                                                                http://blog.goosoftware.co.uk/2010/08/24/spot-the-bug/
+Redirect 301 /blog/append-subversion-revision-to-an-iphone-apps-bundle-version-at-build-time/   http://blog.goosoftware.co.uk/
+Redirect 301 /blog/thoughts-on-the-app-store-review-process/                                    http://blog.goosoftware.co.uk/2010/07/24/app-store-review-process/
+
+Redirect 301 /blog/ http://blog.goosoftware.co.uk/
