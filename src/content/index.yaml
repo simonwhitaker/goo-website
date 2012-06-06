@@ -10,13 +10,13 @@ apps:
     itunes_url: http://itunes.apple.com/gb/app/zippity/id513855390?ls=1&mt=8
     image: /images/apps/zippity.png
     description:
-        - > The easiest way to handle zip files on your iPhone! 
+        - > The easiest way to handle zip files on your iOS device! 
             View contents, send individual files by email, add 
             images to your Camera Roll, and more.
         - > Handles .zip, .tar, .gz, .tar.gz.
         - > See <a href="http://www.zippityapp.co.uk">www.zippityapp.co.uk</a>
     client: Goo Software! This is one of our own.
-    platform: iPhone and iPod Touch
+    platform: "iPhone, iPad and iPod Touch"
 
  -  name: "Oxford University: The Official Guide"
     slug: oxford
