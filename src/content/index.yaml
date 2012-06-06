@@ -10,11 +10,9 @@ apps:
     itunes_url: http://itunes.apple.com/gb/app/zippity/id513855390?ls=1&mt=8
     image: /images/apps/zippity.png
     description:
-        - > The easiest way to handle zip files on your iOS device! 
-            View contents, send individual files by email, add 
-            images to your Camera Roll, and more.
-        - > Handles .zip, .tar, .gz, .tar.gz.
-        - > See <a href="http://www.zippityapp.co.uk">www.zippityapp.co.uk</a>
+        - "The easiest way to handle zip files on your iOS device! View contents, send individual files by email, add images to your Camera Roll, and more."
+        - "Handles .zip, .tar, .gz, .tar.gz."
+        - "See <a href=\"http://www.zippityapp.co.uk\">www.zippityapp.co.uk</a>"
     client: Goo Software! This is one of our own.
     platform: "iPhone, iPad and iPod Touch"
 
@@ -24,15 +22,10 @@ apps:
     itunes_url: http://itunes.apple.com/gb/app/oxford-university-the-official/id453006222?mt=8
     image: /images/apps/oxford-university.png
     accolades:
-        - > Named by Apple as one of the 
-            <a href="http://itunes.apple.com/WebObjects/MZStore.woa/wa/viewFeature?id=480282506">best 
-            apps of 2011</a> in the UK App Store
+        - "Named by Apple as one of the <a href=\"http://itunes.apple.com/WebObjects/MZStore.woa/wa/viewFeature?id=480282506\">best apps of 2011</a> in the UK App Store"
     description:
-        - > Oxford University's first official iPhone app takes you on 
-            a guided tour of this beautiful city and its world-famous
-            university.
-        - > Discover Oxford through the eyes of those who know it best, 
-            including Harry Potter!
+        - "Oxford University's first official iPhone app takes you on a guided tour of this beautiful city and its world-famous university."
+        - "Discover Oxford through the eyes of those who know it best, including Harry Potter!"
     client: <a href="http://www.ox.ac.uk/">The University of Oxford</a>
     platform: iPhone and iPod Touch
 
@@ -42,13 +35,10 @@ apps:
     itunes_url: http://itunes.apple.com/gb/app/ibreastcheck/id391746205?mt=8
     image: /images/apps/ibreastcheck.png
     accolades:
-        - > Winner, Charity and Voluntary Sector<br><a href="http://www.nmaawards.co.uk/winners2011.aspx">NMA Awards 2011</a>
+        -  "Winner, Charity and Voluntary Sector<br><a href=\"http://www.nmaawards.co.uk/winners2011.aspx\">NMA Awards 2011</a>"
     description:
-        - > iBreastCheck from breast cancer charity Breakthrough helps 
-            you to be breast aware with a little TLC: Touch, Look, Check.
-        - > The app has video and slideshow content explaining how to 
-            check your breasts, a reminder service to help you to remember 
-            to check regularly, and more.
+        - "iBreastCheck from breast cancer charity Breakthrough helps you to be breast aware with a little TLC: Touch, Look, Check."
+        - "The app has video and slideshow content explaining how to check your breasts, a reminder service to help you to remember to check regularly, and more."
     client: <a href="http://www.torchbox.com/">Torchbox Ltd</a>
     platform: iPhone and iPod Touch
 
@@ -58,12 +48,9 @@ apps:
     itunes_url: http://itunes.apple.com/gb/app/lucky-voice-karaoke/id428963272?mt=8
     image: /images/apps/lucky-voice.png
     description:
-        - > The ultimate karaoke experience for your iPad!
-        - > Sing along to over 7,500 songs with this fun iPad 
-            app from Lucky Voice, the UK's number one online 
-            karaoke service.
-        - > <a href="http://www.ikmultimedia.com/irigmic/features/">iRig Mic</a> 
-            support means you don't have to use your hairbrush!
+        - "The ultimate karaoke experience for your iPad!"
+        - "Sing along to over 7,500 songs with this fun iPad app from Lucky Voice, the UK's number one online karaoke service."
+        - "<a href=\"http://www.ikmultimedia.com/irigmic/features/\">iRig Mic</a> support means you don't have to use your hairbrush!"
     client: <a href="http://www.luckyvoice.com/">Lucky Voice Ltd</a>
     platform: iPad
     class: ipad
@@ -74,13 +61,8 @@ apps:
     itunes_url: http://itunes.apple.com/gb/app/the-xx/id394653020?mt=8
     image: /images/apps/the-xx.png
     description:
-        - > Using this fun and unique app, you and up to two friends can 
-            play tracks from the xx's award-winning debut album <em>XX</em> 
-            across multiple iPhones or iPod Touches.
-        - > <span class="quotation">
-            &quot;An ingenious use of technology&quot; 
-            <span class="source"> &mdash; The Guardian</span>
-            </span>
+        - "Using this fun and unique app, you and up to two friends can play tracks from the xx's award-winning debut album <em>XX</em> across multiple iPhones or iPod Touches."
+        - "<span class=\"quotation\">&quot;An ingenious use of technology&quot;<span class=\"source\"> &mdash; The Guardian</span></span>"
     client: <a href="http://www.beggars.com/">Beggars Group Ltd</a>
     platform: iPhone and iPod Touch
 
@@ -91,11 +73,8 @@ apps:
     android_package: com.goocode.rsavision
     image: /images/apps/rsa-vision.png 
     description:
-        - > The RSA Vision app brings to you the latest videos from the 
-            RSA's free public events programme. You can browse by category, 
-            search for videos and compile a playlist of your favourite 
-            videos to watch later.
-        -   (Check out the RSAnimate category - they're <em>really</em> great!)
+        - "The RSA Vision app brings to you the latest videos from the RSA's free public events programme. You can browse by category, search for videos and compile a playlist of your favourite videos to watch later."
+        - "(Check out the RSAnimate category - they're <em>really</em> great!)"
     client: <a href="http://www.torchbox.com/">Torchbox Ltd</a>
     platform: "iPhone, iPod Touch, Android"
 
