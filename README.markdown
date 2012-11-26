@@ -11,7 +11,7 @@ It uses [Nanoc](http://nanoc.stoneship.org/) to build the static site contents -
     gem install builder
     gem install rake
     gem install bundler
-    
+    gem install systemu # for rsync deployment    
 
 # Compiling the site
 
