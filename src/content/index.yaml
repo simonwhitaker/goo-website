@@ -58,11 +58,11 @@ apps:
  -  name: The xx
     slug: xx
     slogan: Innovative video experience
-    itunes_url: http://itunes.apple.com/gb/app/the-xx/id394653020?mt=8
     image: /images/apps/the-xx.png
     description:
         - "Using this fun and unique app, you and up to two friends can play tracks from the xx's award-winning debut album <em>XX</em> across multiple iPhones or iPod Touches."
         - "<span class=\"quotation\">&quot;An ingenious use of technology&quot;<span class=\"source\"> &mdash; The Guardian</span></span>"
+        - "<em>No longer on the App Store</em>"
     client: <a href="http://www.beggars.com/">Beggars Group Ltd</a>
     platform: iPhone and iPod Touch
 
