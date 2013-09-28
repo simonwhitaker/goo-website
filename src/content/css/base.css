@@ -3,7 +3,7 @@ p, div, span, td, th, li {
 }
 
 body {
-    font-family: museo-sans, sans-serif;
+    font-family: Helvetica, Arial, sans-serif;
     margin: 0 auto;
     background-color: #aaa;
     color: #555;
@@ -27,7 +27,8 @@ h3 {
 }
 
 h1, h2, h3 {
-    font-family: rooney-web, sans-serif;
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight: 200;
 }
 
 a[href] {
